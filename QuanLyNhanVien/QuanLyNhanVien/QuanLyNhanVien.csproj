@@ -50,7 +50,16 @@
     <Compile Include="DTO\BAC_DTO.cs" />
     <Compile Include="DTO\BOPHAN_DTO.cs" />
     <Compile Include="DTO\CHUCVU_DTO.cs" />
+    <Compile Include="DTO\DANTOC_DTO.cs" />
+    <Compile Include="DTO\HESOLUONGNHANVIEN_DTO.cs" />
+    <Compile Include="DTO\HONNHAN_DTO.cs" />
+    <Compile Include="DTO\NGACH_DTO.cs" />
     <Compile Include="DTO\PHONGBAN_DTO.cs" />
+    <Compile Include="DTO\QuocTich_DTO.cs" />
+    <Compile Include="DTO\TONGIAO_DTO.cs" />
+    <Compile Include="DTO\TRINHDOHOCVAN_DTO.cs" />
+    <Compile Include="DTO\TRINHDONGOAINGU_DTO.cs" />
+    <Compile Include="DTO\TRINHDOTINHOC_DTO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
