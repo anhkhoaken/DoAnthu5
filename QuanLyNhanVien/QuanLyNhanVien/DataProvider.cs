@@ -20,7 +20,7 @@ namespace QuanLyNhanVien
 
         private DataProvider() { }
 
-        private string connectionSTR = "Data Source=DESKTOP-4PCPRE9\SQLEXPRESS;Initial Catalog=QuanLyNhanVien;Integrated Security=True";
+        private string connectionSTR = "Data Source=DESKTOP-4PCPRE9\\SQLEXPRESS;Initial Catalog=QuanLyNhanVien;Integrated Security=True";
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {

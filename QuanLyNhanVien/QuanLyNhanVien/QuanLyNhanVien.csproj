@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\BAC_DAL.cs" />
+    <Compile Include="DAL\TAIKHOAN_DAL.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="DTO\BAC_DTO.cs" />
     <Compile Include="DTO\BOPHAN_DTO.cs" />
@@ -56,6 +58,7 @@
     <Compile Include="DTO\NGACH_DTO.cs" />
     <Compile Include="DTO\PHONGBAN_DTO.cs" />
     <Compile Include="DTO\QuocTich_DTO.cs" />
+    <Compile Include="DTO\TAIKHOAN_DTO.cs" />
     <Compile Include="DTO\TONGIAO_DTO.cs" />
     <Compile Include="DTO\TRINHDOHOCVAN_DTO.cs" />
     <Compile Include="DTO\TRINHDONGOAINGU_DTO.cs" />
@@ -66,8 +69,26 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyBAC_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyBAC_GUI.Designer.cs">
+      <DependentUpon>QuanLyBAC_GUI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -77,6 +98,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuanLyBAC_GUI.resx">
+      <DependentUpon>QuanLyBAC_GUI.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -90,8 +114,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
