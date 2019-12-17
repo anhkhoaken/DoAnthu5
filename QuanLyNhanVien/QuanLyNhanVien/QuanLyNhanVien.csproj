@@ -62,12 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\BAC_DAL.cs" />
-<<<<<<< HEAD
     <Compile Include="DAL\PHONGBAN_DAL.cs" />
-=======
     <Compile Include="DAL\BOPHAN_DAL.cs" />
     <Compile Include="DAL\CHUCVU_DAL.cs" />
->>>>>>> 2ca1a7c20a85b1ef5e5364b566333e19c80f86a9
     <Compile Include="DAL\TAIKHOAN_DAL.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="DTO\BAC_DTO.cs" />
@@ -110,13 +107,12 @@
     <Compile Include="QuanLyBAC_GUI.Designer.cs">
       <DependentUpon>QuanLyBAC_GUI.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="QuanLyPhongBan_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QuanLyPhongBan_GUI.Designer.cs">
       <DependentUpon>QuanLyPhongBan_GUI.cs</DependentUpon>
-=======
+    </Compile>
     <Compile Include="QuanLyBOPHAN_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,7 +130,6 @@
     </Compile>
     <Compile Include="ThemBOPHAN_GUI.Designer.cs">
       <DependentUpon>ThemBOPHAN_GUI.cs</DependentUpon>
->>>>>>> 2ca1a7c20a85b1ef5e5364b566333e19c80f86a9
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -157,10 +152,9 @@
     <EmbeddedResource Include="QuanLyBAC_GUI.resx">
       <DependentUpon>QuanLyBAC_GUI.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="QuanLyPhongBan_GUI.resx">
       <DependentUpon>QuanLyPhongBan_GUI.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanLyBOPHAN_GUI.resx">
       <DependentUpon>QuanLyBOPHAN_GUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,7 +163,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThemBOPHAN_GUI.resx">
       <DependentUpon>ThemBOPHAN_GUI.cs</DependentUpon>
->>>>>>> 2ca1a7c20a85b1ef5e5364b566333e19c80f86a9
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -184,6 +177,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
