@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,13 @@ namespace QuanLyNhanVien.DTO
         public BOPHAN_DTO()
         {
           
+        }
+        public BOPHAN_DTO(DataRow row)
+        {
+            this.MaBoPhan = row["MaBoPhan"].ToString();
+            this.TenBoPhan = row["TenBoPhan"].ToString();
+            this.PhongBan = row["PhongBan"].ToString();
+            this.GhiChu = row["GhiChu"].ToString();
         }
 
         public BOPHAN_DTO(string MaBoPhan, string TenBoPhan, string PhongBan, string GhiChu)

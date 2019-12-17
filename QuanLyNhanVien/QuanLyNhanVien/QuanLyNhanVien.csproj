@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\BAC_DAL.cs" />
+    <Compile Include="DAL\BOPHAN_DAL.cs" />
+    <Compile Include="DAL\CHUCVU_DAL.cs" />
     <Compile Include="DAL\TAIKHOAN_DAL.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="DTO\BAC_DTO.cs" />
@@ -83,6 +85,24 @@
     <Compile Include="QuanLyBAC_GUI.Designer.cs">
       <DependentUpon>QuanLyBAC_GUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyBOPHAN_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyBOPHAN_GUI.Designer.cs">
+      <DependentUpon>QuanLyBOPHAN_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemBAC_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemBAC_GUI.Designer.cs">
+      <DependentUpon>ThemBAC_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemBOPHAN_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemBOPHAN_GUI.Designer.cs">
+      <DependentUpon>ThemBOPHAN_GUI.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +120,15 @@
     </Compile>
     <EmbeddedResource Include="QuanLyBAC_GUI.resx">
       <DependentUpon>QuanLyBAC_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyBOPHAN_GUI.resx">
+      <DependentUpon>QuanLyBOPHAN_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemBAC_GUI.resx">
+      <DependentUpon>ThemBAC_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemBOPHAN_GUI.resx">
+      <DependentUpon>ThemBOPHAN_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
