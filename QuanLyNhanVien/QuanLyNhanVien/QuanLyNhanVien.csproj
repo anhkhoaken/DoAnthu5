@@ -33,8 +33,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="JGradient Panel">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\New folder\JGradient Panel.dll</HintPath>
+    </Reference>
+    <Reference Include="JMaterialTextbox">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\New folder\JMaterialTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="JMetroTextBox">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\New folder\JMetroTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="JTextBox2">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\New folder\JTextBox2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\BAC_DAL.cs" />
+    <Compile Include="DAL\PHONGBAN_DAL.cs" />
     <Compile Include="DAL\TAIKHOAN_DAL.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="DTO\BAC_DTO.cs" />
@@ -69,6 +85,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThemPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemPhongBan.Designer.cs">
+      <DependentUpon>ThemPhongBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,8 +105,17 @@
     <Compile Include="QuanLyBAC_GUI.Designer.cs">
       <DependentUpon>QuanLyBAC_GUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyPhongBan_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyPhongBan_GUI.Designer.cs">
+      <DependentUpon>QuanLyPhongBan_GUI.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemPhongBan.resx">
+      <DependentUpon>ThemPhongBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -100,6 +131,9 @@
     </Compile>
     <EmbeddedResource Include="QuanLyBAC_GUI.resx">
       <DependentUpon>QuanLyBAC_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyPhongBan_GUI.resx">
+      <DependentUpon>QuanLyPhongBan_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

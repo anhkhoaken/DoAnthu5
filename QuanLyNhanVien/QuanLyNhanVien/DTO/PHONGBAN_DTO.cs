@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,14 @@ namespace QuanLyNhanVien.DTO
 
         public PHONGBAN_DTO()
         {
+        }
+        public PHONGBAN_DTO(DataRow row)
+        {
+            this._MaPB = row["MaPB"].ToString();
+            this._TenPB =row["TenPB"].ToString();
+            this._SoLuongNhanVien = int.Parse(row["SoLuongNhanVien"].ToString());   
+            this._GhiChu = row["GhiChu"].ToString();
+
         }
         public PHONGBAN_DTO(string MaPB, string TenPB, int SoLuongNhanVien, string GhiChu)
         {
