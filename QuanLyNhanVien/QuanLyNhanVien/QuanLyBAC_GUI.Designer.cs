@@ -31,8 +31,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txbMaBac = new System.Windows.Forms.TextBox();
+            this.txbTenBac = new System.Windows.Forms.TextBox();
             this.dtgDanhSachBac = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -59,19 +59,19 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên Bậc : ";
             // 
-            // textBox1
+            // txbMaBac
             // 
-            this.textBox1.Location = new System.Drawing.Point(164, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(286, 20);
-            this.textBox1.TabIndex = 2;
+            this.txbMaBac.Location = new System.Drawing.Point(164, 34);
+            this.txbMaBac.Name = "txbMaBac";
+            this.txbMaBac.Size = new System.Drawing.Size(286, 20);
+            this.txbMaBac.TabIndex = 2;
             // 
-            // textBox2
+            // txbTenBac
             // 
-            this.textBox2.Location = new System.Drawing.Point(164, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(286, 20);
-            this.textBox2.TabIndex = 3;
+            this.txbTenBac.Location = new System.Drawing.Point(164, 60);
+            this.txbTenBac.Name = "txbTenBac";
+            this.txbTenBac.Size = new System.Drawing.Size(286, 20);
+            this.txbTenBac.TabIndex = 3;
             // 
             // dtgDanhSachBac
             // 
@@ -88,6 +88,7 @@
             this.dtgDanhSachBac.Name = "dtgDanhSachBac";
             this.dtgDanhSachBac.Size = new System.Drawing.Size(368, 205);
             this.dtgDanhSachBac.TabIndex = 4;
+            this.dtgDanhSachBac.SelectionChanged += new System.EventHandler(this.dtgDanhSachBac_SelectionChanged);
             // 
             // button2
             // 
@@ -97,6 +98,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Cập Nhập";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -106,6 +108,7 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // QuanLyBAC_GUI
             // 
@@ -115,8 +118,8 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dtgDanhSachBac);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txbTenBac);
+            this.Controls.Add(this.txbMaBac);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "QuanLyBAC_GUI";
@@ -132,8 +135,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txbMaBac;
+        private System.Windows.Forms.TextBox txbTenBac;
         private System.Windows.Forms.DataGridView dtgDanhSachBac;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

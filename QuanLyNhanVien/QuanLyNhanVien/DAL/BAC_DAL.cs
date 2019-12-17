@@ -44,5 +44,25 @@ namespace QuanLyNhanVien.DAL
             return Bac;
         }
 
+        public void addBAC(BAC_DTO bac)
+        {
+            string query = "INSERT INTO dbo.BAC(MaBac,TenBac) " +
+                "VALUES(N'" + bac.MaBac + "',N'" + bac.TenBac + "') ";
+             DataTable result = DataProvider.Instance.ExecuteQuery(query);
+        }
+
+        public void DeleteBAC(string MaBac)
+        {
+            string query = string.Format("DELETE FROM dbo.BAC WHERE MaBac = N'{0}'", MaBac);
+
+            DataTable result = DataProvider.Instance.ExecuteQuery(query);
+        }
+
+        public void UpdateBAC(string maBac, string tenBac)
+        {
+            string query = string.Format("UPDATE dbo.BAC SET TenBac = N'{0}' WHERE MaBac = N'{1}' ", tenBac, maBac);
+            DataProvider.Instance.ExecuteNonQuery(query);
+        }
+
     }
 }
