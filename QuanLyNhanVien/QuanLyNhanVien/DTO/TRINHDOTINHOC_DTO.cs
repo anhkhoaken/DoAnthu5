@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace QuanLyNhanVien.DTO
 {
@@ -12,11 +13,18 @@ namespace QuanLyNhanVien.DTO
         private string _TenTDTH;
         private string _GhiChu;
 
-        public TRINHDOTINHOC_DTO(string MaTDTH, string TenTDTH, string GhiChu)
+        public TRINHDOTINHOC_DTO(string MaTDTH, string TenTDTH)
         {
             this.MaTDTH = MaTDTH;
             this.TenTDTH = TenTDTH;
-            this.GhiChu = GhiChu;
+            //this.GhiChu = GhiChu;
+        }
+        public TRINHDOTINHOC_DTO(DataRow row)
+        {
+            this.MaTDTH= row["MaTDTH"].ToString();
+            this.TenTDTH = row["TenTDTH"].ToString();
+            // this.GhiChu = row["GhiChu"].ToString();
+
         }
 
         public string MaTDTH { get => _MaTDTH; set => _MaTDTH = value; }

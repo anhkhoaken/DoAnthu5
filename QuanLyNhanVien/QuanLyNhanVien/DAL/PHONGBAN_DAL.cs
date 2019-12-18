@@ -47,19 +47,17 @@ namespace QuanLyNhanVien.DAL
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
-        public bool UpdatePHONGBAN(string MaPB, string TenPB, int SoLuongNhanVien, string GhiChu)
+        public void UpdatePHONGBAN(string MaPB, string TenPB, int SoLuongNhanVien, string GhiChu)
         {
-            string query = string.Format("UPDATE dbo.PHONGBAN SET TenPB = N'{0}', SoLuongNhanVien = {1}, GhiChu = {2} WHERE MaPB = {3}", TenPB, SoLuongNhanVien, GhiChu, MaPB);
-            int result = DataProvider.Instance.ExecuteNonQuery(query);
-
-            return result > 0;
+            string query = string.Format("UPDATE dbo.PHONGBAN SET TenPB = N'{0}', SoLuongNhanVien = N'{1}', GhiChu = N'{2}' WHERE MaPB = N'{3}' ", TenPB, SoLuongNhanVien, GhiChu, MaPB);
+            DataProvider.Instance.ExecuteNonQuery(query);
         }
 
-        public bool DeletePHONGBAN(int MaPB)
+        public void DeletePHONGBAN(string MaPB)
         {
-            string query = string.Format("Delete PHONGBAN where id = {0}", MaPB);
-            int result = DataProvider.Instance.ExecuteNonQuery(query);
-            return result > 0;
+            string query = string.Format("DELETE FROM dbo.PHONGBAN WHERE MaPB = N'{0}'", MaPB);
+
+            DataTable result = DataProvider.Instance.ExecuteQuery(query);
         }
     }
 }
