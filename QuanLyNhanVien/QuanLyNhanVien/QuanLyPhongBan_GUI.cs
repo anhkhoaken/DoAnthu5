@@ -17,53 +17,51 @@ namespace QuanLyNhanVien
         public QuanLyPhongBan_GUI()
         {
             InitializeComponent();
+            load();
         }
-      
+        public void load()
+        {
+            List<PHONGBAN_DTO> danhsach = PHONGBAN_DAL.Instance.LoadListPHONGBAN();
+            dgvPhongBan.DataSource = danhsach;
+        }
 
         private void Btcapnhat_Click(object sender, EventArgs e)
         {
-
+            int currentRowIndex = dgvPhongBan.CurrentCellAddress.Y;
+            string mapb = maPB.TextName;
+            string tenpb = TenPB.TextName;
+            int soluongnhanvien = int.Parse(slnv.TextName.ToString());
+            string gc = ghichu.TextName;
+            if (-1 < currentRowIndex && currentRowIndex < dgvPhongBan.RowCount)
+            {
+                string ma = dgvPhongBan.CurrentRow.Cells[0].Value.ToString();
+                PHONGBAN_DAL.Instance.UpdatePHONGBAN(mapb, tenpb, soluongnhanvien, gc);
+                MessageBox.Show("Cập nhập Thành Công " + mapb);
+            }
+            load();
         }
 
-        private void QuanLyPhongBan_GUI_Load(object sender, EventArgs e)
+        private void xoa(object sender, EventArgs e)
         {
-            List<PHONGBAN_DTO> danhsach = PHONGBAN_DAL.Instance.LoadListPHONGBAN();
-
-          /*  dgvPhongBan.Columns.Clear();
-            dgvPhongBan.DataSource = null;
-            dgvPhongBan.AutoGenerateColumns = false;
-            dgvPhongBan.AllowUserToAddRows = false;*/
-            dgvPhongBan.DataSource = danhsach;
-            // Tạo danh sách cột trong dgv
-         /*   var clmapb = new DataGridViewTextBoxColumn();
-            clmapb.Name = "MaPB";
-            clmapb.HeaderText = "Mã Phòng Ban";
-            clmapb.DataPropertyName = "MaPB";
-            dgvPhongBan.Columns.Add(clmapb);
-
-            var cltenpb = new DataGridViewTextBoxColumn();
-            clmapb.Name = "TenPB";
-            clmapb.HeaderText = "Tên Phòng Ban";
-            clmapb.DataPropertyName = "TenPB";
-            dgvPhongBan.Columns.Add(cltenpb);
-
-            var clslnv = new DataGridViewTextBoxColumn();
-             clmapb.Name = "SoLuongNhanVien";
-             clmapb.HeaderText = "Số Lượng Nhân Viên";
-             clmapb.DataPropertyName = "SoLuongNhanVien";
-            dgvPhongBan.Columns.Add(clslnv);
-
-             var clgc = new DataGridViewTextBoxColumn();
-             clmapb.Name = "GhiChu";
-             clmapb.HeaderText = "Ghi Chú";
-             clmapb.DataPropertyName = "GhiChu";
-             dgvPhongBan.Columns.Add(clgc);
-             */
+            int currentRowIndex = dgvPhongBan.CurrentCellAddress.Y;
+            string Ma = dgvPhongBan.CurrentRow.Cells[0].Value.ToString();
+            if (-1 < currentRowIndex && currentRowIndex<dgvPhongBan.RowCount)
+            {
+                MessageBox.Show("Xóa Thành Công " + Ma);
+                PHONGBAN_DAL.Instance.DeletePHONGBAN(Ma);
+            }
+            load();
         }
-
         private void JMetroTextBox2_Load(object sender, EventArgs e)
         {
-
+            int currentRowIndex = dgvPhongBan.CurrentCellAddress.Y;
+            string Ma = dgvPhongBan.CurrentRow.Cells[0].Value.ToString();
+            if (-1 < currentRowIndex && currentRowIndex < dgvPhongBan.RowCount)
+            {
+                MessageBox.Show("Xóa Thành Công" + Ma);
+                BOPHAN_DAL.Instance.DeleteBOPHAN(Ma);
+            }
+            load();
         }
 
         private void JMetroTextBox1_Load(object sender, EventArgs e)

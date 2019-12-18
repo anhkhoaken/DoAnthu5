@@ -65,7 +65,12 @@
     <Compile Include="DAL\PHONGBAN_DAL.cs" />
     <Compile Include="DAL\BOPHAN_DAL.cs" />
     <Compile Include="DAL\CHUCVU_DAL.cs" />
+    <Compile Include="DAL\QUOCTICH_DAL.cs" />
     <Compile Include="DAL\TAIKHOAN_DAL.cs" />
+    <Compile Include="DAL\TONGIAO_DAL.cs" />
+    <Compile Include="DAL\TRINHDOHOCVAN_DAL.cs" />
+    <Compile Include="DAL\TRINHDONGOAINGU_DAL.cs" />
+    <Compile Include="DAL\TRINHDOTINHOC_DAL.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="DTO\BAC_DTO.cs" />
     <Compile Include="DTO\BOPHAN_DTO.cs" />
@@ -86,6 +91,36 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYQUOCTICH_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QUANLYQUOCTICH_GUI.Designer.cs">
+      <DependentUpon>QUANLYQUOCTICH_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyTDHV_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyTDHV_GUI.Designer.cs">
+      <DependentUpon>QuanLyTDHV_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyTDNN_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyTDNN_GUI.Designer.cs">
+      <DependentUpon>QuanLyTDNN_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyTDTH_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyTDTH_GUI.Designer.cs">
+      <DependentUpon>QuanLyTDTH_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyTonGiao_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyTonGiao_GUI.Designer.cs">
+      <DependentUpon>QuanLyTonGiao_GUI.cs</DependentUpon>
     </Compile>
     <Compile Include="ThemPhongBan.cs">
       <SubType>Form</SubType>
@@ -131,8 +166,53 @@
     <Compile Include="ThemBOPHAN_GUI.Designer.cs">
       <DependentUpon>ThemBOPHAN_GUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThemQUOCTICH_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemQUOCTICH_GUI.Designer.cs">
+      <DependentUpon>ThemQUOCTICH_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="THEMTONGIAO_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THEMTONGIAO_GUI.Designer.cs">
+      <DependentUpon>THEMTONGIAO_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemTRINHDOHOCVAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemTRINHDOHOCVAN.Designer.cs">
+      <DependentUpon>ThemTRINHDOHOCVAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemTRINHDONGOAINGU_DAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemTRINHDONGOAINGU_DAL.Designer.cs">
+      <DependentUpon>ThemTRINHDONGOAINGU_DAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemTRINHDOTINHOC_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemTRINHDOTINHOC_GUI.Designer.cs">
+      <DependentUpon>ThemTRINHDOTINHOC_GUI.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QUANLYQUOCTICH_GUI.resx">
+      <DependentUpon>QUANLYQUOCTICH_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyTDHV_GUI.resx">
+      <DependentUpon>QuanLyTDHV_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyTDNN_GUI.resx">
+      <DependentUpon>QuanLyTDNN_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyTDTH_GUI.resx">
+      <DependentUpon>QuanLyTDTH_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyTonGiao_GUI.resx">
+      <DependentUpon>QuanLyTonGiao_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemPhongBan.resx">
       <DependentUpon>ThemPhongBan.cs</DependentUpon>
@@ -163,6 +243,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThemBOPHAN_GUI.resx">
       <DependentUpon>ThemBOPHAN_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemQUOCTICH_GUI.resx">
+      <DependentUpon>ThemQUOCTICH_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="THEMTONGIAO_GUI.resx">
+      <DependentUpon>THEMTONGIAO_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemTRINHDOHOCVAN.resx">
+      <DependentUpon>ThemTRINHDOHOCVAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemTRINHDONGOAINGU_DAL.resx">
+      <DependentUpon>ThemTRINHDONGOAINGU_DAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemTRINHDOTINHOC_GUI.resx">
+      <DependentUpon>ThemTRINHDOTINHOC_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvPhongBan = new System.Windows.Forms.DataGridView();
             this.txtMaPB = new System.Windows.Forms.Label();
             this.txtTenPB = new System.Windows.Forms.Label();
             this.txtslnv = new System.Windows.Forms.Label();
             this.txtGhiChu = new System.Windows.Forms.Label();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.btxoa = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.btcapnhat = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.label1 = new System.Windows.Forms.Label();
             this.maPB = new JMetroTextBox.JMetroTextBox();
@@ -53,23 +53,23 @@
             // dgvPhongBan
             // 
             this.dgvPhongBan.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPhongBan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPhongBan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPhongBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPhongBan.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPhongBan.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvPhongBan.Location = new System.Drawing.Point(0, 180);
             this.dgvPhongBan.Name = "dgvPhongBan";
             this.dgvPhongBan.Size = new System.Drawing.Size(963, 261);
@@ -123,25 +123,25 @@
             this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape1,
+            this.btxoa,
             this.btcapnhat});
             this.shapeContainer1.Size = new System.Drawing.Size(963, 754);
             this.shapeContainer1.TabIndex = 10;
             this.shapeContainer1.TabStop = false;
             // 
-            // rectangleShape1
+            // btxoa
             // 
-            this.rectangleShape1.BackColor = System.Drawing.Color.White;
-            this.rectangleShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.rectangleShape1.BorderColor = System.Drawing.Color.Black;
-            this.rectangleShape1.CornerRadius = 20;
-            this.rectangleShape1.FillColor = System.Drawing.Color.White;
-            this.rectangleShape1.FillGradientColor = System.Drawing.Color.White;
-            this.rectangleShape1.Location = new System.Drawing.Point(547, 607);
-            this.rectangleShape1.Name = "rectangleShape1";
-            this.rectangleShape1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.rectangleShape1.Size = new System.Drawing.Size(161, 51);
-            this.rectangleShape1.Click += new System.EventHandler(this.Btcapnhat_Click);
+            this.btxoa.BackColor = System.Drawing.Color.White;
+            this.btxoa.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.btxoa.BorderColor = System.Drawing.Color.Black;
+            this.btxoa.CornerRadius = 20;
+            this.btxoa.FillColor = System.Drawing.Color.White;
+            this.btxoa.FillGradientColor = System.Drawing.Color.White;
+            this.btxoa.Location = new System.Drawing.Point(547, 607);
+            this.btxoa.Name = "btxoa";
+            this.btxoa.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btxoa.Size = new System.Drawing.Size(161, 51);
+            this.btxoa.Click += new System.EventHandler(this.xoa);
             // 
             // btcapnhat
             // 
@@ -326,7 +326,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "QuanLyPhongBan_GUI";
             this.Text = "QuanLyPhongBan_GUI";
-            this.Load += new System.EventHandler(this.QuanLyPhongBan_GUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhongBan)).EndInit();
             this.jGradientPanel1.ResumeLayout(false);
             this.jGradientPanel1.PerformLayout();
@@ -349,7 +348,7 @@
         private JMetroTextBox.JMetroTextBox TenPB;
         private JMetroTextBox.JMetroTextBox ghichu;
         private JMetroTextBox.JMetroTextBox slnv;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape btxoa;
         private System.Windows.Forms.Label label2;
         private JGradient_Panel.JGradientPanel jGradientPanel1;
         private System.Windows.Forms.Label label3;
