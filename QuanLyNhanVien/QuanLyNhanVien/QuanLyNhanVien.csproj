@@ -34,13 +34,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="JGradient Panel">
-      <HintPath>..\..\..\..\..\Downloads\Compressed\New folder\JGradient Panel.dll</HintPath>
+      <HintPath>..\..\..\JControls\JGradient Panel.dll</HintPath>
     </Reference>
     <Reference Include="JMaterialTextbox">
       <HintPath>..\..\..\..\..\Downloads\Compressed\New folder\JMaterialTextbox.dll</HintPath>
     </Reference>
     <Reference Include="JMetroTextBox">
-      <HintPath>..\..\..\..\..\Downloads\Compressed\New folder\JMetroTextBox.dll</HintPath>
     </Reference>
     <Reference Include="JTextBox2">
       <HintPath>..\..\..\..\..\Downloads\Compressed\New folder\JTextBox2.dll</HintPath>
