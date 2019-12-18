@@ -40,6 +40,7 @@
       <HintPath>..\..\..\..\..\Downloads\Compressed\New folder\JMaterialTextbox.dll</HintPath>
     </Reference>
     <Reference Include="JMetroTextBox">
+      <HintPath>..\..\..\JControls\JMetroTextBox.dll</HintPath>
     </Reference>
     <Reference Include="JTextBox2">
       <HintPath>..\..\..\..\..\Downloads\Compressed\New folder\JTextBox2.dll</HintPath>
