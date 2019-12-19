@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\BAC_DAL.cs" />
+    <Compile Include="DAL\NHANVIEN_DAL.cs" />
     <Compile Include="DAL\PHONGBAN_DAL.cs" />
     <Compile Include="DAL\BOPHAN_DAL.cs" />
     <Compile Include="DAL\CHUCVU_DAL.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="DTO\HESOLUONGNHANVIEN_DTO.cs" />
     <Compile Include="DTO\HONNHAN_DTO.cs" />
     <Compile Include="DTO\NGACH_DTO.cs" />
+    <Compile Include="DTO\NhanVien_DTO.cs" />
     <Compile Include="DTO\PHONGBAN_DTO.cs" />
     <Compile Include="DTO\QuocTich_DTO.cs" />
     <Compile Include="DTO\TAIKHOAN_DTO.cs" />
@@ -91,6 +93,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNhanVien_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyNhanVien_GUI.Designer.cs">
+      <DependentUpon>QuanLyNhanVien_GUI.cs</DependentUpon>
     </Compile>
     <Compile Include="QUANLYQUOCTICH_GUI.cs">
       <SubType>Form</SubType>
@@ -121,6 +129,12 @@
     </Compile>
     <Compile Include="QuanLyTonGiao_GUI.Designer.cs">
       <DependentUpon>QuanLyTonGiao_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemNhanVien_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemNhanVien_GUI.Designer.cs">
+      <DependentUpon>ThemNhanVien_GUI.cs</DependentUpon>
     </Compile>
     <Compile Include="ThemPhongBan.cs">
       <SubType>Form</SubType>
@@ -213,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyTonGiao_GUI.resx">
       <DependentUpon>QuanLyTonGiao_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemNhanVien_GUI.resx">
+      <DependentUpon>ThemNhanVien_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemPhongBan.resx">
       <DependentUpon>ThemPhongBan.cs</DependentUpon>
