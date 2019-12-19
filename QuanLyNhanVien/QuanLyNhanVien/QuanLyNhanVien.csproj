@@ -62,6 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\BAC_DAL.cs" />
+    <Compile Include="DAL\DANTOC_DAL.cs" />
+    <Compile Include="DAL\HESOLUONGNHANVIEN_DAL.cs" />
+    <Compile Include="DAL\HONNHAN_DAL.cs" />
     <Compile Include="DAL\PHONGBAN_DAL.cs" />
     <Compile Include="DAL\BOPHAN_DAL.cs" />
     <Compile Include="DAL\CHUCVU_DAL.cs" />
@@ -92,6 +95,30 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyChucVu_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyChucVu_GUI.Designer.cs">
+      <DependentUpon>QuanLyChucVu_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyDANTOC_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyDANTOC_GUI.Designer.cs">
+      <DependentUpon>QuanLyDANTOC_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyHonNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyHonNhan.Designer.cs">
+      <DependentUpon>QuanLyHonNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyHSLUONG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyHSLUONG.Designer.cs">
+      <DependentUpon>QuanLyHSLUONG.cs</DependentUpon>
+    </Compile>
     <Compile Include="QUANLYQUOCTICH_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +148,30 @@
     </Compile>
     <Compile Include="QuanLyTonGiao_GUI.Designer.cs">
       <DependentUpon>QuanLyTonGiao_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemCHUCVU_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemCHUCVU_GUI.Designer.cs">
+      <DependentUpon>ThemCHUCVU_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemDanToc_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemDanToc_GUI.Designer.cs">
+      <DependentUpon>ThemDanToc_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemHONNHAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemHONNHAN.Designer.cs">
+      <DependentUpon>ThemHONNHAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemHSLUONG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemHSLUONG.Designer.cs">
+      <DependentUpon>ThemHSLUONG.cs</DependentUpon>
     </Compile>
     <Compile Include="ThemPhongBan.cs">
       <SubType>Form</SubType>
@@ -199,6 +250,18 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyChucVu_GUI.resx">
+      <DependentUpon>QuanLyChucVu_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyDANTOC_GUI.resx">
+      <DependentUpon>QuanLyDANTOC_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyHonNhan.resx">
+      <DependentUpon>QuanLyHonNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyHSLUONG.resx">
+      <DependentUpon>QuanLyHSLUONG.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QUANLYQUOCTICH_GUI.resx">
       <DependentUpon>QUANLYQUOCTICH_GUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +276,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyTonGiao_GUI.resx">
       <DependentUpon>QuanLyTonGiao_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemCHUCVU_GUI.resx">
+      <DependentUpon>ThemCHUCVU_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemDanToc_GUI.resx">
+      <DependentUpon>ThemDanToc_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemHONNHAN.resx">
+      <DependentUpon>ThemHONNHAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemHSLUONG.resx">
+      <DependentUpon>ThemHSLUONG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemPhongBan.resx">
       <DependentUpon>ThemPhongBan.cs</DependentUpon>

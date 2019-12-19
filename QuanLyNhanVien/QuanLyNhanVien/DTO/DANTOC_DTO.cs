@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,12 @@ namespace QuanLyNhanVien.DTO
             this.MaDT = MaDT;
             this.TenDT = TenDT;
             this.GhiChu = GhiChu;
+        }
+        public DANTOC_DTO(DataRow row)
+        {
+            this.MaDT = row["MaDT"].ToString();
+            this.TenDT = row["TenDT"].ToString();
+            this.GhiChu = row["GhiChu"].ToString();
         }
 
         public string MaDT { get => _MaDT; set => _MaDT = value; }
