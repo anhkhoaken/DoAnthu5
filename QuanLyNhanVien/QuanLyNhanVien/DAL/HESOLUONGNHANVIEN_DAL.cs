@@ -27,6 +27,19 @@ namespace QuanLyNhanVien.DAL
             return result.Rows.Count > 0;
         }
 
+        public HESOLUONGNHANVIEN_DTO getHS(string MaHSLuong)
+        {
+            string query = "SELECT * FROM dbo.HESOLUONGNHANVIEN WHERE MaHSLuong = N'" + MaHSLuong + "' ";
+            DataTable result = DataProvider.Instance.ExecuteQuery(query);
+            HESOLUONGNHANVIEN_DTO heso = new HESOLUONGNHANVIEN_DTO("no","no","no",0.0001f);
+            foreach (DataRow item in result.Rows)
+            {
+                HESOLUONGNHANVIEN_DTO heso1 = new HESOLUONGNHANVIEN_DTO(item);
+                return heso1;
+            }
+            return heso;
+        }
+
         public List<HESOLUONGNHANVIEN_DTO> LoadListHeSo()
         {
             List<HESOLUONGNHANVIEN_DTO> Heso = new List<HESOLUONGNHANVIEN_DTO>();
@@ -35,6 +48,19 @@ namespace QuanLyNhanVien.DAL
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
+            foreach (DataRow item in data.Rows)
+            {
+                HESOLUONGNHANVIEN_DTO heso = new HESOLUONGNHANVIEN_DTO(item);
+                Heso.Add(heso);
+            }
+
+            return Heso;
+        }
+        public List<HESOLUONGNHANVIEN_DTO> HSL(string ma)
+        {
+            List<HESOLUONGNHANVIEN_DTO> Heso = new List<HESOLUONGNHANVIEN_DTO>();
+            string query = string.Format("SELECT * FROM dbo.HESOLUONGNHANVIEN WHERE MaHSLuong = N'{0}'", ma);
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow item in data.Rows)
             {
                 HESOLUONGNHANVIEN_DTO heso = new HESOLUONGNHANVIEN_DTO(item);

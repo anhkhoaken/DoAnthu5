@@ -58,7 +58,7 @@ namespace QuanLyNhanVien.DTO
             this.MaCV = row["MaCV"].ToString();
             this.MaHSLuong = row["MaHSLuong"].ToString();
             this.MaNV = row["MaNV"].ToString();
-            this.MaNghach = row["MaNghach"].ToString();
+            this.MaNghach = row["MaNgach"].ToString();
             this.MaPB = row["MaPB"].ToString();
             this.MaQT = row["MaQT"].ToString();
             this.MaTG = row["MaTG"].ToString();

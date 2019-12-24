@@ -21,7 +21,7 @@ namespace QuanLyNhanVien.DTO
         {
             this.MaCV = row["MaCV"].ToString();
             this.TenCV = row["TenCV"].ToString();
-            this.HeSoCV = float.Parse(row["HeSoCV"].ToString());
+            //this.HeSoCV = float.Parse(row["HeSoCV"].ToString());
             this.GhiChu = row["GhiChu"].ToString();
         }
 

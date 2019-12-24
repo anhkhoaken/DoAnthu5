@@ -29,10 +29,13 @@ namespace QuanLyNhanVien.DTO
         {
             this.MaNV = row["MaNV"].ToString();
             this.Honey = row["Honey"].ToString();
-            this.TenVoChong = row["MaNV"].ToString();
-            this.NTDuoi15 = int.Parse(row["NTDuoi15"].ToString());
-            this.NTTren15 = int.Parse(row["NTTren15"].ToString());
-            this.NTTren60 = int.Parse(row["NTTren60"].ToString());
+            this.TenVoChong = row["TenVoChong"].ToString();
+            /* this.NTDuoi15 = int.Parse(row["NTDuoi15"].ToString());
+             this.NTTren15 = int.Parse(row["NTTren15"].ToString());
+             this.NTTren60 = int.Parse(row["NTTren60"].ToString());*/
+            this.NTDuoi15 = 1;
+            this.NTTren15 = 1;
+            this.NTTren60 = 1;
         }
 
         public string MaNV { get => _MaNV; set => _MaNV = value; }

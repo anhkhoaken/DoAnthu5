@@ -20,17 +20,57 @@ namespace QuanLyNhanVien.DAL
         private NHANVIEN_DAL() { }
         public bool checkIsExist(string MaPB)
         {
-            string query = "SELECT * FROM dbo.PHONGBAN WHERE MaPB = N'" + MaPB + "' ";
+            string query = "SELECT * FROM dbo.NhanVien WHERE MaPB = N'" + MaPB + "' ";
             DataTable result = DataProvider.Instance.ExecuteQuery(query);
 
             return result.Rows.Count > 0;
         }
+        /*public NhanVien_DTO getNV(string Ma)
+        {
+            string query = "SELECT * FROM dbo.NhanVien WHERE MaNhanVien = N'" + Ma + "' ";
+            DataTable result = DataProvider.Instance.ExecuteQuery(query);
+            NhanVien_DTO heso = new NhanVien_DTO("no", "no", "no", 0.0001f);
+            foreach (DataRow item in result.Rows)
+            {
+                NhanVien_DTO heso1 = new NhanVien_DTO(item);
+                return heso1;
+            }
+            return heso;
+        }*/
         public List<NhanVien_DTO> LoadListNHANVIEN()
         {
             List<NhanVien_DTO> NhanVien = new List<NhanVien_DTO>();
 
             string query = "SELECT * FROM dbo.NhanVien ";
 
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                NhanVien_DTO nhanvien = new NhanVien_DTO(item);
+                NhanVien.Add(nhanvien);
+            }
+
+            return NhanVien;
+        }
+        public List<NhanVien_DTO> LoadListNhanVienByName(string name)
+        {
+            List<NhanVien_DTO> NhanVien = new List<NhanVien_DTO>();
+            string query = string.Format("SELECT * FROM dbo.NhanVien WHERE TenNhanVien = N'{0}'", name);
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                NhanVien_DTO nhanvien = new NhanVien_DTO(item);
+                NhanVien.Add(nhanvien);
+            }
+
+            return NhanVien;
+        }
+        public List<NhanVien_DTO> LoadListNhanVienByID(string name)
+        {
+            List<NhanVien_DTO> NhanVien = new List<NhanVien_DTO>();
+            string query = string.Format("SELECT * FROM dbo.NhanVien WHERE MaNhanVien = N'{0}'", name);
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow item in data.Rows)

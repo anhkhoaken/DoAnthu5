@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,11 @@ namespace QuanLyNhanVien.DTO
         {
             this.MaNgach = MaNgach;
             this.TenNgach = TenNgach;
+        }
+        public NGACH_DTO(DataRow row)
+        {
+            this.MaNgach = row["MaNgach"].ToString();
+            this.TenNgach = row["TenNgach"].ToString();
         }
 
         public string MaNgach { get => _MaNgach; set => _MaNgach = value; }

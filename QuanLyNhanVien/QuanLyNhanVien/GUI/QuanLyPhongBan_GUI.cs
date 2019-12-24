@@ -43,6 +43,7 @@ namespace QuanLyNhanVien
 
         private void xoa(object sender, EventArgs e)
         {
+
             int currentRowIndex = dgvPhongBan.CurrentCellAddress.Y;
             string Ma = dgvPhongBan.CurrentRow.Cells[0].Value.ToString();
             if (-1 < currentRowIndex && currentRowIndex<dgvPhongBan.RowCount)

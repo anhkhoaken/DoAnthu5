@@ -62,6 +62,7 @@
             this.txtMaNhanVien = new System.Windows.Forms.TextBox();
             this.txtTenNhanVien = new System.Windows.Forms.TextBox();
             this.txtGhiChu = new System.Windows.Forms.TextBox();
+            this.txbHsLuong = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -157,7 +158,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(11, 546);
+            this.label9.Location = new System.Drawing.Point(11, 430);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(39, 13);
             this.label9.TabIndex = 10;
@@ -175,7 +176,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(11, 435);
+            this.label11.Location = new System.Drawing.Point(11, 546);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(70, 13);
             this.label11.TabIndex = 12;
@@ -269,10 +270,11 @@
             // cbNgach
             // 
             this.cbNgach.FormattingEnabled = true;
-            this.cbNgach.Location = new System.Drawing.Point(102, 538);
+            this.cbNgach.Location = new System.Drawing.Point(102, 422);
             this.cbNgach.Name = "cbNgach";
             this.cbNgach.Size = new System.Drawing.Size(209, 21);
             this.cbNgach.TabIndex = 23;
+            this.cbNgach.TextChanged += new System.EventHandler(this.CbNgach_TextChanged);
             // 
             // cbHonNhan
             // 
@@ -285,7 +287,7 @@
             // cbHeSoLuong
             // 
             this.cbHeSoLuong.FormattingEnabled = true;
-            this.cbHeSoLuong.Location = new System.Drawing.Point(102, 427);
+            this.cbHeSoLuong.Location = new System.Drawing.Point(102, 538);
             this.cbHeSoLuong.Name = "cbHeSoLuong";
             this.cbHeSoLuong.Size = new System.Drawing.Size(209, 21);
             this.cbHeSoLuong.TabIndex = 25;
@@ -313,6 +315,7 @@
             this.cbBac.Name = "cbBac";
             this.cbBac.Size = new System.Drawing.Size(209, 21);
             this.cbBac.TabIndex = 28;
+            this.cbBac.TextChanged += new System.EventHandler(this.CbBac_TextChanged);
             // 
             // cbBoPhan
             // 
@@ -351,11 +354,22 @@
             this.txtGhiChu.Size = new System.Drawing.Size(209, 20);
             this.txtGhiChu.TabIndex = 35;
             // 
+            // txbHsLuong
+            // 
+            this.txbHsLuong.AutoSize = true;
+            this.txbHsLuong.Location = new System.Drawing.Point(797, 139);
+            this.txbHsLuong.Name = "txbHsLuong";
+            this.txbHsLuong.Size = new System.Drawing.Size(60, 13);
+            this.txbHsLuong.TabIndex = 36;
+            this.txbHsLuong.Text = "HSLUONG";
+            this.txbHsLuong.Click += new System.EventHandler(this.TxbHsLuong_Click);
+            // 
             // ThemNhanVien_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(908, 650);
+            this.Controls.Add(this.txbHsLuong);
             this.Controls.Add(this.txtGhiChu);
             this.Controls.Add(this.txtTenNhanVien);
             this.Controls.Add(this.txtMaNhanVien);
@@ -431,5 +445,6 @@
         private System.Windows.Forms.TextBox txtMaNhanVien;
         private System.Windows.Forms.TextBox txtTenNhanVien;
         private System.Windows.Forms.TextBox txtGhiChu;
+        private System.Windows.Forms.Label txbHsLuong;
     }
 }
