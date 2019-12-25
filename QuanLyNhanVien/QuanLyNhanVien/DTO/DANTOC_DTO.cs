@@ -12,7 +12,6 @@ namespace QuanLyNhanVien.DTO
         private string _MaDT;
         private string _TenDT;
         private string _GhiChu;
-        private string _MaGhiChu;
 
         public DANTOC_DTO(string MaDT, string TenDT, string GhiChu)
         {
@@ -25,13 +24,10 @@ namespace QuanLyNhanVien.DTO
             this.MaDT = row["MaDT"].ToString();
             this.TenDT = row["TenDT"].ToString();
             this.GhiChu = row["GhiChu"].ToString();
-            this.MaGhiChu=row["MaGhiChu"].ToString();
         }
 
         public string MaDT { get => _MaDT; set => _MaDT = value; }
         public string TenDT { get => _TenDT; set => _TenDT = value; }
         public string GhiChu { get => _GhiChu; set => _GhiChu = value; }
-        public string MaGhiChu { get => _MaGhiChu; set => _MaGhiChu = value; }
-
     }
 }

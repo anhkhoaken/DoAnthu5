@@ -16,17 +16,10 @@ namespace QuanLyNhanVien.DTO
 
         public BOPHAN_DTO()
         {
-          this.MaBoPhan = row["MaBoPhan"].ToString();
-            this.TenBoPhan = row["TenBoPhan"].ToString();
-            this.PhongBan = row["PhongBan"].ToString();
-            this.GhiChu = row["GhiChu"].ToString();
+          
         }
         public BOPHAN_DTO(DataRow row)
         {
-            this.MaBoPhan = row["MaBoPhan"].ToString();
-            this.TenBoPhan = row["TenBoPhan"].ToString();
-            this.PhongBan = row["PhongBan"].ToString();
-            this.GhiChu = row["GhiChu"].ToString();
             this.MaBoPhan = row["MaBoPhan"].ToString();
             this.TenBoPhan = row["TenBoPhan"].ToString();
             this.PhongBan = row["PhongBan"].ToString();
@@ -43,7 +36,6 @@ namespace QuanLyNhanVien.DTO
 
         public string MaBoPhan { get => _MaBoPhan; set => _MaBoPhan = value; }
         public string TenBoPhan { get => _TenBoPhan; set => _TenBoPhan = value; }
-        public string PhongBan { get => _PhongBan; set => _PhongBan = value; }
         public string PhongBan { get => _PhongBan; set => _PhongBan = value; }
         public string GhiChu { get => _GhiChu; set => _GhiChu = value; }
     }
