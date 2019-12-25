@@ -82,9 +82,12 @@ namespace QuanLyNhanVien.DAL
             DataTable result = DataProvider.Instance.ExecuteQuery(query);
           
         }
-        public void DeleteTDHV(string Ma)
+
+        public void Delete(string Ma)
+
+
         {
-            string query = string.Format("DELETE FROM dbo.TRINHDOHOCVAN WHERE MaTDHV = N'{0}'", Ma);
+            string query = string.Format("DELETE FROM dbo.TienLuong WHERE MaNhanVien = N'{0}'", Ma);
 
             DataTable result = DataProvider.Instance.ExecuteQuery(query);
         }

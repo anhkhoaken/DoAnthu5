@@ -40,6 +40,22 @@ namespace QuanLyNhanVien.DAL
 
             return PhongBan;
         }
+        public List<PHONGBAN_DTO> Load(string ma)
+        {
+            List<PHONGBAN_DTO> PhongBan = new List<PHONGBAN_DTO>();
+
+            string query = string.Format("SELECT * FROM dbo.PHONGBAN WHERE MaPB = N'{0}'", ma);
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                PHONGBAN_DTO phongban = new PHONGBAN_DTO(item);
+                PhongBan.Add(phongban);
+            }
+
+            return PhongBan;
+        }
         public bool InsertPHONGBAN(PHONGBAN_DTO phongban)
         {
             string query = "INSERT INTO dbo.PHONGBAN(MaPB,TenPB,SoLuongNhanVien,GhiChu) " +

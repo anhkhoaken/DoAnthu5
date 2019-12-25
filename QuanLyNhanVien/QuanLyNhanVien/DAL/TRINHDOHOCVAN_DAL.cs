@@ -47,6 +47,17 @@ namespace QuanLyNhanVien.DAL
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
-       
+        public void UpdateTDHV(string MaTDHV, string TenTDHV, string GhiChu)
+        {
+            string query = string.Format("UPDATE dbo.TRINHDOHOCVAN SET TenTDHV = N'{0}', GhiChu = N'{1}' WHERE MaTDHV = N'{2}' ", TenTDHV, GhiChu, MaTDHV);
+            DataProvider.Instance.ExecuteNonQuery(query);
+        }
+
+        public void DeleteTDHV(string Ma)
+        {
+            string query = string.Format("DELETE FROM dbo.TRINHDOHOCVAN WHERE MaTDHV = N'{0}'", Ma);
+
+            DataTable result = DataProvider.Instance.ExecuteQuery(query);
+        }
     }
 }
