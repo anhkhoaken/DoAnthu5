@@ -62,6 +62,10 @@ namespace QuanLyNhanVien
                 {
                     //7
                     NHANVIEN_DAL.Instance.InsertNHANVIEN(nhanvienDto);
+                    List<PHONGBAN_DTO> dsPhongban = PHONGBAN_DAL.Instance.Load(MaPB);
+                    int slnv = dsPhongban[0].SoLuongNhanVien+1;
+                    PHONGBAN_DAL.Instance.UpdatePHONGBAN(dsPhongban[0].MaPB, dsPhongban[0].TenPB,slnv, dsPhongban[0].GhiChu);
+
                     MessageBox.Show("Thêm thành công" + "");
                 }
             }
