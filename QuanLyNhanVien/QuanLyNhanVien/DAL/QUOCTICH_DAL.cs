@@ -23,22 +23,7 @@ namespace QuanLyNhanVien.DAL
 
             return result.Rows.Count > 0;
         }
-        public List<QuocTich_DTO> LoadListQUOCTICH()
-        {
-            List<QuocTich_DTO> QuocTich = new List<QuocTich_DTO>();
-
-            string query = "SELECT * FROM dbo.QUOCTICH ";
-
-            DataTable data = DataProvider.Instance.ExecuteQuery(query);
-
-            foreach (DataRow item in data.Rows)
-            {
-                QuocTich_DTO quoctich = new QuocTich_DTO(item);
-                QuocTich.Add(quoctich);
-            }
-
-            return QuocTich;
-        }
+       
         public bool InsertQUOCTICH(QuocTich_DTO quoctich)
         {
             string query = "INSERT INTO dbo.QUOCTICH(MaQT,TenQT,GhiChu) " +
