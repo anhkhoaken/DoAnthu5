@@ -107,7 +107,7 @@ namespace QuanLyNhanVien
             cbDanToc.ValueMember = "MaDT";
 
             cbHonNhan.DataSource = new BindingSource(dsHonNhan, null);
-            cbHonNhan.DisplayMember = "Honey";
+            cbHonNhan.DisplayMember = "MaNV";
             cbHonNhan.ValueMember = "MaNV";
 
             cbPhongBan.DataSource = new BindingSource(dsPhongBan, null);
@@ -178,6 +178,11 @@ namespace QuanLyNhanVien
             HESOLUONGNHANVIEN_DTO gettt = HESOLUONGNHANVIEN_DAL.Instance.getHS(ma);
             txbHsLuong.Text = gettt.HSLuong.ToString();
           //  txbHsLuong.Text = ma;
+
+        }
+
+        private void ThemNhanVien_GUI_Load(object sender, EventArgs e)
+        {
 
         }
     }

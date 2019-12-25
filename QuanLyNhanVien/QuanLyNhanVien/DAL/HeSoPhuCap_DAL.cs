@@ -43,21 +43,16 @@ namespace QuanLyNhanVien.DAL
 
             return HSPC;
         }
-        public List<HeSoPhuCap_DTO> Load(string ma)
+        public HeSoPhuCap_DTO Load(string ma)
         {
-            List<HeSoPhuCap_DTO> HSPC = new List<HeSoPhuCap_DTO>();
+            HeSoPhuCap_DTO HSPC = new HeSoPhuCap_DTO();
 
             string query = "SELECT * FROM dbo.HESOPHUCAP WHERE MaHSPC = N'" + ma + "' " ;
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
-            foreach (DataRow item in data.Rows)
-            {
-                HeSoPhuCap_DTO hspc = new HeSoPhuCap_DTO(item);
-                HSPC.Add(hspc);
-            }
-
-            return HSPC;
+            HeSoPhuCap_DTO hspc = new HeSoPhuCap_DTO(data.Rows[0]);
+            return hspc;
         }
 
 

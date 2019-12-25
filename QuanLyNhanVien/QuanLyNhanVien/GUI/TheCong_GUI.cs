@@ -45,8 +45,8 @@ namespace QuanLyNhanVien.GUI
         }
         private void Btthem_Click(object sender, EventArgs e)
         {
-            //1
-            if (txtNgayCong.Text.ToString().Length != 0)
+            //1dat
+            if (txtNgayCong.Text.ToString().Length != 0 && int.Parse(txtNgayCong.Text.ToString()) < DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month))
             {
                 //2
                 string MaNhanVien = cbMaNhanVien.SelectedValue.ToString();
@@ -89,6 +89,41 @@ namespace QuanLyNhanVien.GUI
         {
             this.ma = cbMaNhanVien.Text.ToString();
             LoadName(ma);
+        }
+
+        private void Label6_Click(object sender, EventArgs e)
+        {
+            //1
+            if (txtNgayCong.Text.ToString().Length != 0)
+            {
+                //2
+                string MaNhanVien = cbMaNhanVien.SelectedValue.ToString();
+                string TenNhanVien = txtTenNhanVien.Text.ToString();
+                string HeSoPhuCap = cbHSPC.SelectedValue.ToString();
+                int ngaycong = int.Parse(txtNgayCong.Text.ToString());
+                int thang = int.Parse(dateTimePicker1.Value.Month.ToString());
+                int nam = int.Parse(dateTimePicker1.Value.Year.ToString());
+                Cong_DTO cong = new Cong_DTO(MaNhanVien, TenNhanVien, ngaycong, HeSoPhuCap, thang, nam);
+                //3
+                if (!Cong_DAL.Instance.check(thang, nam, MaNhanVien))
+                {
+                    //4
+                    Cong_DAL.Instance.add(cong);
+                    MessageBox.Show("Chấm Công Thành Công");
+                }
+                //5
+                else
+                {
+                    //6
+                    MessageBox.Show("Nhân Viên Này Đã Được Chấm Công");
+                }
+            }
+            //7
+            else
+            {
+                MessageBox.Show("Nhập Ngày Công");
+
+            }
         }
     }
 }

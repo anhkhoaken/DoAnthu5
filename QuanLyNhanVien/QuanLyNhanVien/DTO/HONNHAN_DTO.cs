@@ -28,7 +28,7 @@ namespace QuanLyNhanVien.DTO
         public HONNHAN_DTO(DataRow row)
         {
             this.MaNV = row["MaNV"].ToString();
-            this.Honey = row["Honey"].ToString();
+          
             this.TenVoChong = row["TenVoChong"].ToString();
             /* this.NTDuoi15 = int.Parse(row["NTDuoi15"].ToString());
              this.NTTren15 = int.Parse(row["NTTren15"].ToString());

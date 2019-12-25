@@ -36,17 +36,24 @@ namespace QuanLyNhanVien
             soluongnhanvien = int.Parse(SLNV.TextName.ToString());
             PHONGBAN_DTO phonbanDto = new PHONGBAN_DTO(maphongban, tenphongban, soluongnhanvien, ghichu);
             bool isExist = PHONGBAN_DAL.Instance.checkIsExist(phonbanDto.MaPB);
-
-            if (isExist)
+            if(tenphongban.Count()!=0 && maphongban.Count()!=0)
             {
-                MessageBox.Show("Mã Đã Tồn Tại, Thêm thất bại");
+                if (isExist)
+                {
+                    MessageBox.Show("Mã Đã Tồn Tại, Thêm thất bại");
+                }
+                else
+                {
+                    // BAC_DAL.Instance.addBAC(Bac);
+                    PHONGBAN_DAL.Instance.InsertPHONGBAN(phonbanDto);
+                    MessageBox.Show("Thêm thành công" + "");
+                }
             }
             else
             {
-                // BAC_DAL.Instance.addBAC(Bac);
-                PHONGBAN_DAL.Instance.InsertPHONGBAN(phonbanDto);
-                MessageBox.Show("Thêm thành công" + "");
+                MessageBox.Show("Điền đầy đủ thông tin");
             }
+          
         }
 
         private void Label5_Click(object sender, EventArgs e)

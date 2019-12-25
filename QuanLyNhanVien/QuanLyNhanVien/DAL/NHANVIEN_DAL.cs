@@ -20,7 +20,7 @@ namespace QuanLyNhanVien.DAL
         private NHANVIEN_DAL() { }
         public bool checkIsExist(string MaPB)
         {
-            string query = "SELECT * FROM dbo.NhanVien WHERE MaPB = N'" + MaPB + "' ";
+            string query = "SELECT * FROM dbo.NhanVien WHERE MaNhanVien = N'" + MaPB + "' ";
             DataTable result = DataProvider.Instance.ExecuteQuery(query);
 
             return result.Rows.Count > 0;

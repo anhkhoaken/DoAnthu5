@@ -77,8 +77,8 @@ namespace QuanLyNhanVien.DAL
         }
         public void add(TienLuongDTO tienluong)
         {
-            string query = "INSERT INTO dbo.TienLuong(MaNhanVien,TenNhanVien,MaHSLuong,TienLuong,Thang,Nam) " +
-                "VALUES(N'" + tienluong.MaNhanVien + "',N'" + tienluong.TenNhanVien + "',N'" + tienluong.MaHSLuong + "',N'" + tienluong.TienLuong + "',N'" + tienluong.Thang + "',N'" + tienluong.Nam + "') ";
+            string query = "INSERT INTO dbo.TienLuong(MaNhanVien,TenNhanVien,MaHSLuong,TienLuong,Thang,Nam,GhiChu) " +
+                "VALUES(N'" + tienluong.MaNhanVien + "',N'" + tienluong.TenNhanVien + "',N'" + tienluong.MaHSLuong + "',N'" + tienluong.TienLuong + "',N'" + tienluong.Thang + "',N'" + tienluong.Nam + "',N'" + tienluong.GhiChu + "') ";
             DataTable result = DataProvider.Instance.ExecuteQuery(query);
           
         }
@@ -94,7 +94,7 @@ namespace QuanLyNhanVien.DAL
 
         public void Update(TienLuongDTO tienluong)
         {
-            string query = string.Format("UPDATE dbo.TienLuong SET TenNhanVien = N'{0}', MaHSLuong = N'{1}', TienLuong = N'{2}' , Thang = N'{3}' , Nam = N'{4}' WHERE MaNhanVien = N'{5}' ",tienluong.TenNhanVien,tienluong.MaHSLuong,tienluong.TienLuong,tienluong.Thang,tienluong.Nam,tienluong.MaNhanVien);
+            string query = string.Format("UPDATE dbo.TienLuong SET TenNhanVien = N'{0}', MaHSLuong = N'{1}', TienLuong = N'{2}' , Thang = N'{3}' , Nam = N'{4}' , GhiChu = N'{5}' WHERE MaNhanVien = N'{6}' ", tienluong.TenNhanVien,tienluong.MaHSLuong,tienluong.TienLuong,tienluong.Thang,tienluong.Nam,tienluong.GhiChu,tienluong.MaNhanVien);
             DataProvider.Instance.ExecuteNonQuery(query);
         }
     }

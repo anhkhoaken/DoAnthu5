@@ -61,24 +61,45 @@ namespace QuanLyNhanVien.GUI
             //2
             for(int i=0;i<DsNhanVien.Count;i++)
             {
+                
                 //3
                 List<Cong_DTO> dsCong = Cong_DAL.Instance.Load(DsNhanVien[i].MaNhanVien,int.Parse(DateTime.Now.Month.ToString()), int.Parse(DateTime.Now.Year.ToString()));
                 string MaNhanVien = DsNhanVien[i].MaNhanVien;
                 string TenNhanVien = DsNhanVien[i].TenNhanVien;
                 string HeSoLuong = DsNhanVien[i].MaHSLuong;
-                List<HeSoPhuCap_DTO> dshspc = HeSoPhuCap_DAL.Instance.Load(dsCong[0].MaHSPC.ToString());
-                HESOLUONGNHANVIEN_DTO gettt = HESOLUONGNHANVIEN_DAL.Instance.getHS(HeSoLuong);
-                float TienLuong = float.Parse(gettt.HSLuong.ToString() ) * 10000 * dsCong[0].NgayCong * dshspc[0].TenHSPC;
-                int thang = int.Parse(DateTime.Now.Month.ToString());
-                int nam = int.Parse(DateTime.Now.Year.ToString());
-                TienLuongDTO tienluong = new TienLuongDTO(MaNhanVien, TenNhanVien, HeSoLuong, TienLuong, thang, nam);
-                dsTienLuong.Add(tienluong);
-                //4
-                if (!TienLuongDAL.Instance.checkIsExist(tienluong.MaNhanVien, tienluong.Thang, tienluong.Nam))
+                if(Cong_DAL.Instance.check(int.Parse(DateTime.Now.Month.ToString()), int.Parse(DateTime.Now.Year.ToString()),MaNhanVien))
                 {
-                    //5
-                    TienLuongDAL.Instance.add(tienluong);
+                   
+                    HeSoPhuCap_DTO dshspc = HeSoPhuCap_DAL.Instance.Load(dsCong[0].MaHSPC.ToString()); 
+                    HESOLUONGNHANVIEN_DTO gettt = HESOLUONGNHANVIEN_DAL.Instance.getHS(HeSoLuong);
+                    float TienLuong = float.Parse(gettt.HSLuong.ToString()) * 10000 * dsCong[0].NgayCong + 10000 * dshspc.TenHSPC;
+                    int thang = int.Parse(DateTime.Now.Month.ToString());
+                    int nam = int.Parse(DateTime.Now.Year.ToString());
+                    TienLuongDTO tienluong = new TienLuongDTO(MaNhanVien, TenNhanVien, HeSoLuong, TienLuong, thang, nam, "");
+                    dsTienLuong.Add(tienluong);
+                    //4
+                    if (!TienLuongDAL.Instance.checkIsExist(tienluong.MaNhanVien, tienluong.Thang, tienluong.Nam))
+                    {
+                        //5
+                        TienLuongDAL.Instance.add(tienluong);
+                    }
                 }
+                else
+                {   
+                    float TienLuong = 0;
+                    int thang = int.Parse(DateTime.Now.Month.ToString());
+                    int nam = int.Parse(DateTime.Now.Year.ToString());
+                    TienLuongDTO tienluong = new TienLuongDTO(MaNhanVien, TenNhanVien, HeSoLuong, TienLuong, thang, nam, "Chưa Chấm Công");
+                    dsTienLuong.Add(tienluong);
+                    //4
+                    if (!TienLuongDAL.Instance.checkIsExist(tienluong.MaNhanVien, tienluong.Thang, tienluong.Nam))
+                    {
+                        //5
+                        TienLuongDAL.Instance.add(tienluong);
+                    }
+                }
+               
+                
             }
             //6
             dgvtienluong.DataSource = dsTienLuong;
@@ -94,6 +115,13 @@ namespace QuanLyNhanVien.GUI
         private void Dgvtienluong_SelectionChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void LbXem_Click(object sender, EventArgs e)
+        {
+            List<TienLuongDTO> dsTienLuong = new List<TienLuongDTO>();
+            dsTienLuong = TienLuongDAL.Instance.LoadListTG(int.Parse(dtpThoiGian.Value.Month.ToString()), int.Parse(dtpThoiGian.Value.Year.ToString()));
+            dgvtienluong.DataSource = dsTienLuong;
         }
     }
 }

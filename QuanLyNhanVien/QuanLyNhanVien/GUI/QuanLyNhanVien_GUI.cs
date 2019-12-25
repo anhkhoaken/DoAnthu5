@@ -104,7 +104,7 @@ namespace QuanLyNhanVien
             }
             for (int i = 0; i < dsluong.Count; i++)
             {
-                TienLuongDTO luong = new TienLuongDTO(ma, ten, dsluong[i].MaHSLuong, dsluong[i].TienLuong, dsluong[i].Thang, dsluong[i].Nam);
+                TienLuongDTO luong = new TienLuongDTO(ma, ten, dsluong[i].MaHSLuong, dsluong[i].TienLuong, dsluong[i].Thang, dsluong[i].Nam,dsluong[i].GhiChu);
                 TienLuongDAL.Instance.Update(luong);
               
             }
@@ -159,6 +159,16 @@ namespace QuanLyNhanVien
             List<NhanVien_DTO> danhsach = NHANVIEN_DAL.Instance.LoadListNHANVIEN();
 
             dgvNhanVien.DataSource = danhsach;
+
+            for (int i = 0; i <= dgvNhanVien.Columns.Count - 1; i++)
+            {
+                //store autosized widths
+                int colw = dgvNhanVien.Columns[i].Width;
+                //remove autosizing
+                dgvNhanVien.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                //set width to calculated by autosize
+                dgvNhanVien.Columns[i].Width = colw;
+            }
         }
         private void LoadData()
         {

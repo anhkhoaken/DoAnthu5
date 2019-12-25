@@ -67,5 +67,78 @@ namespace QuanLyNhanVien
            
             f.Show();
         }
+
+        private void ThêmBậcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new ThemBAC_GUI();
+
+            f.Show();
+        }
+
+        private void QuảnLýBậcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new QuanLyBAC_GUI();
+
+            f.Show();
+
+        }
+
+        private void ThêmBộPhậnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new ThemBOPHAN_GUI();
+
+            f.Show();
+        }
+
+        private void QuảnLýBộPhậnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new QuanLyBOPHAN_GUI();
+
+            f.Show();
+        }
+
+        private void ThêmChứcVụToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new ThemCHUCVU_GUI();
+
+            f.Show();
+        }
+
+        private void QuảnLýChứcVụToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new QuanLyChucVu_GUI();
+
+            f.Show();
+        }
+
+        private void HệSốLượngNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new QuanLyHSLUONG();
+
+            f.Show();
+        }
+
+        private void HệSốPhụCấpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
+            
+        } 
+
+        private void ThêmHệSốLươngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new QuanLyNGACH_GUI();
+
+            f.Show();
+        }
+        
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void BộPhậmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

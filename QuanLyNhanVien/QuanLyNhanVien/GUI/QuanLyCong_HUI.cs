@@ -23,6 +23,7 @@ namespace QuanLyNhanVien.GUI
         {
             List<Cong_DTO> ds = Cong_DAL.Instance.LoadList();
             dgvcong.DataSource = ds;
+           
         }
 
         private void BtCapNhat_Click(object sender, EventArgs e)

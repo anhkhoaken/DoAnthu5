@@ -14,6 +14,7 @@ namespace QuanLyNhanVien.DTO
         string _MaHSLuong;
         float _TienLuong;
         int _Thang, _Nam;
+        string _GhiChu;
         public TienLuongDTO()
         {
 
@@ -26,8 +27,9 @@ namespace QuanLyNhanVien.DTO
             this.TienLuong = float.Parse(row["TienLuong"].ToString());
             this.Thang = int.Parse(row["Thang"].ToString());
             this.Nam = int.Parse(row["Nam"].ToString());
+            this.GhiChu = row["GhiChu"].ToString();
         }
-        public TienLuongDTO(string MaNhanVien, string TenNhanVien, string MaHSLuong, float TienLuong, int thang, int nam)
+        public TienLuongDTO(string MaNhanVien, string TenNhanVien, string MaHSLuong, float TienLuong, int thang, int nam,string GhiChu)
         {
             this.MaNhanVien = MaNhanVien;
             this.TenNhanVien = TenNhanVien;
@@ -35,6 +37,7 @@ namespace QuanLyNhanVien.DTO
             this.TienLuong = TienLuong;
             this.Thang = thang;
             this.Nam = nam;
+            this.GhiChu = GhiChu;
         }
 
         public string MaNhanVien { get => _MaNhanVien; set => _MaNhanVien = value; }
@@ -44,5 +47,6 @@ namespace QuanLyNhanVien.DTO
      //   public DateTime Thoigian { get => thoigian; set => thoigian = value; }
         public int Thang { get => _Thang; set => _Thang = value; }
         public int Nam { get => _Nam; set => _Nam = value; }
+        public string GhiChu { get => _GhiChu; set => _GhiChu = value; }
     }
 }
