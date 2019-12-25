@@ -80,40 +80,6 @@ namespace QuanLyNhanVien.DAL
 
             return Cong;
         }
-        public List<Cong_DTO> LoadList()
-        {
-            List<Cong_DTO> Cong = new List<Cong_DTO>();
-
-            string query = "SELECT * FROM dbo.Cong ";
-
-            DataTable data = DataProvider.Instance.ExecuteQuery(query);
-
-            foreach (DataRow item in data.Rows)
-            {
-                Cong_DTO cong = new Cong_DTO(item);
-                Cong.Add(cong);
-            }
-
-            return Cong;
-        }
-
-        public void add(Cong_DTO cong)
-        {
-            string query = string.Format("INSERT INTO dbo.Cong (MaNhanVien,TenNhanVien,NgayCong,MaHSPC,Thang,Nam) VALUES (N'{0}',N'{1}',N'{2}',N'{3}',N'{4}',N'{5}')", cong.MaNhanVien, cong.TenNhanVien, cong.NgayCong, cong.MaHSPC,cong.Thang,cong.Nam);
-            DataTable result = DataProvider.Instance.ExecuteQuery(query);
-        }
-
-        public void Delete(string Ma)
-        {
-            string query = string.Format("DELETE FROM dbo.Cong WHERE MaNhanVien = N'{0}'", Ma);
-
-            DataTable result = DataProvider.Instance.ExecuteQuery(query);
-        }
-
-        public void Update(Cong_DTO cong)
-        {
-            string query = string.Format("UPDATE dbo.Cong SET TenNhanVien = N'{0}' , NgayCong = N'{1}' , MaHSPC = N'{2}', Thang = N'{3}', Nam = N'{4}' WHERE MaNhanVien = N'{5}' ", cong.TenNhanVien, cong.NgayCong, cong.MaHSPC, cong.Thang, cong.Nam, cong.MaNhanVien);
-            DataProvider.Instance.ExecuteNonQuery(query);
-        }
+        
     }
 }
