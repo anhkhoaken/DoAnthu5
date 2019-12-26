@@ -22,7 +22,7 @@ namespace QuanLyNhanVien
         private void button1_Click(object sender, EventArgs e)
         {
 
-            HESOLUONGNHANVIEN_DTO newheso = new HESOLUONGNHANVIEN_DTO(txbMaHS.Text,txbMaNgach.Text,txbMaBac.Text,float.Parse(txbHeSo.Text));
+            HESOLUONGNHANVIEN_DTO newheso = new HESOLUONGNHANVIEN_DTO(txbMaHS.Text,cbMaNgach.SelectedValue.ToString(),cbMaBac.SelectedValue.ToString(), float.Parse(txbHeSo.Text));
 
             if (HESOLUONGNHANVIEN_DAL.Instance.checkIsExist(newheso.MaHSLuong))
             {
@@ -33,6 +33,18 @@ namespace QuanLyNhanVien
                 HESOLUONGNHANVIEN_DAL.Instance.addHSLuong(newheso);
                 MessageBox.Show("Thêm thành công ");
             }
+        }
+
+        private void ThemHSLUONG_Load(object sender, EventArgs e)
+        {
+            List<BAC_DTO> dsbac = BAC_DAL.Instance.LoadListBAC();
+            List<NGACH_DTO> dsngach = Ngach_DAL.Instance.LoadListBoPhan();
+            cbMaBac.DataSource = new BindingSource(dsbac, null);
+            cbMaBac.DisplayMember = "TenBac";
+            cbMaBac.ValueMember = "MaBac";
+            cbMaNgach.DataSource = new BindingSource(dsngach, null);
+            cbMaNgach.DisplayMember = "TenNgach";
+            cbMaNgach.ValueMember = "MaNgach";
         }
     }
 }

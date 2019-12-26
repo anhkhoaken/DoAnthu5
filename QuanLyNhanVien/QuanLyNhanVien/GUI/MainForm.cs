@@ -140,5 +140,115 @@ namespace QuanLyNhanVien
         {
 
         }
+
+        private void ThêmQuốcTịchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new ThemQUOCTICH_GUI();
+
+            f.Show();
+        }
+
+        private void QuảnLýQuốcTịchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new QUANLYQUOCTICH_GUI();
+
+            f.Show();
+        }
+
+        private void ThêmTônGIáoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new THEMTONGIAO_GUI();
+
+            f.Show();
+        }
+
+        private void QuảnLýTônGiáoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new QuanLyTonGiao_GUI();
+
+            f.Show();
+        }
+
+        private void ThêmTĐHVToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new ThemTRINHDOHOCVAN();
+
+            f.Show();
+        }
+
+        private void QuảnLýTĐHVToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new QuanLyTDHV_GUI();
+
+            f.Show();
+        }
+
+        private void ThêmBậcToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form f = new ThemBAC_GUI();
+
+            f.Show();
+        }
+
+        private void QuảnLýBậcToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form f = new QuanLyBAC_GUI();
+
+            f.Show();
+        }
+
+        private void ThêmTĐNNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new ThemTRINHDONGOAINGU_DAL();
+
+            f.Show();
+        }
+
+        private void QuảnLýTĐNNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new QuanLyTDNN_GUI();
+
+            f.Show();
+        }
+
+        private void ThêmTĐTHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new ThemTRINHDOTINHOC_GUI();
+
+            f.Show();
+        }
+
+        private void QuảnLýTĐTHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new QuanLyTDTH_GUI();
+
+            f.Show();
+        }
+
+        private void ThêmHSLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new ThemHSLUONG();
+
+            f.Show();
+        }
+
+        private void QuảnLýHSLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new QuanLyHSLUONG();
+
+            f.Show();
+        }
+
+        private void ThêmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new ThemHONNHAN();
+            f.Show();
+        }
+
+        private void QuảnLýThôngTinHônNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new QuanLyHonNhan();
+            f.Show();
+        }
     }
 }

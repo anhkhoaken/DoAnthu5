@@ -20,7 +20,7 @@ namespace QuanLyNhanVien
         {
             InitializeComponent();
             LoadData();
-           // HSLuong();
+            HSLuong();
         }
 
         private void Btthem_Click(object sender, EventArgs e)
@@ -62,6 +62,10 @@ namespace QuanLyNhanVien
                 {
                     //7
                     NHANVIEN_DAL.Instance.InsertNHANVIEN(nhanvienDto);
+                    List<PHONGBAN_DTO> dsPhongban = PHONGBAN_DAL.Instance.Load(MaPB);
+                    int slnv = dsPhongban[0].SoLuongNhanVien+1;
+                    PHONGBAN_DAL.Instance.UpdatePHONGBAN(dsPhongban[0].MaPB, dsPhongban[0].TenPB,slnv, dsPhongban[0].GhiChu);
+
                     MessageBox.Show("Thêm thành công" + "");
                 }
             }
@@ -134,9 +138,9 @@ namespace QuanLyNhanVien
             cbTrinhDoTinHoc.DisplayMember = "TenTDTH";
             cbTrinhDoTinHoc.ValueMember = "MaTDTH";
 
-            cbHeSoLuong.DataSource = new BindingSource(dsHSL, null);
+          /*  cbHeSoLuong.DataSource = new BindingSource(dsHSL, null);
             cbHeSoLuong.DisplayMember = "HSLuong";
-            cbHeSoLuong.ValueMember = "MaHSLuong";
+            cbHeSoLuong.ValueMember = "MaHSLuong";*/
 
 
 
@@ -163,21 +167,21 @@ namespace QuanLyNhanVien
         }
         private void HSLuong()
         {
-           /* string ma = "HS" + ngach + bac;
-            List<HESOLUONGNHANVIEN_DTO> danhsach = HESOLUONGNHANVIEN_DAL.Instance.getHS(ma);
+            string ma = "HS" + ngach + bac;
+            List<HESOLUONGNHANVIEN_DTO> danhsach = HESOLUONGNHANVIEN_DAL.Instance.HSL(ma);
             cbHeSoLuong.DataSource = new BindingSource(danhsach, null);
             cbHeSoLuong.DisplayMember = "HSLuong";
-            cbHeSoLuong.ValueMember = "MaHSLuong";*/
+            cbHeSoLuong.ValueMember = "MaHSLuong";
 
         }
       
         private void TxbHsLuong_Click(object sender, EventArgs e)
         {
-          //  string ma = "HS" + ngach + bac;
+          
             string ma = "HS" + cbNgach.SelectedValue.ToString() + cbBac.SelectedValue.ToString();
             HESOLUONGNHANVIEN_DTO gettt = HESOLUONGNHANVIEN_DAL.Instance.getHS(ma);
             txbHsLuong.Text = gettt.HSLuong.ToString();
-          //  txbHsLuong.Text = ma;
+         
 
         }
 

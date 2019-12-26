@@ -38,5 +38,10 @@ namespace QuanLyNhanVien
                 MessageBox.Show("Thêm thành công Chức Vụ");
             }
         }
+
+        private void ThemCHUCVU_GUI_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
