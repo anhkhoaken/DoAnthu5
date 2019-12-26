@@ -72,5 +72,10 @@ namespace QuanLyNhanVien
             }
             loaddanhsach();
         }
+
+        private void DtgDanhSachBac_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

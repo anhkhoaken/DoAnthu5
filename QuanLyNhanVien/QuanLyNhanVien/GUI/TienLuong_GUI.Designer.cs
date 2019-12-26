@@ -180,7 +180,6 @@
             this.Controls.Add(this.dtpThoiGian);
             this.Controls.Add(this.dgvtienluong);
             this.Controls.Add(this.shapeContainer1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TienLuong_GUI";
             this.Text = "TienLuong_GUI";
             ((System.ComponentModel.ISupportInitialize)(this.dgvtienluong)).EndInit();

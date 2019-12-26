@@ -43,7 +43,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTrinhDoHocVan)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtMaTrinhDoHocVan
@@ -57,7 +60,7 @@
             this.txtMaTrinhDoHocVan.ForeColors = System.Drawing.Color.Gray;
             this.txtMaTrinhDoHocVan.IsPassword = false;
             this.txtMaTrinhDoHocVan.LineThickness = 2;
-            this.txtMaTrinhDoHocVan.Location = new System.Drawing.Point(65, 275);
+            this.txtMaTrinhDoHocVan.Location = new System.Drawing.Point(34, 380);
             this.txtMaTrinhDoHocVan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMaTrinhDoHocVan.MaxLength = 32767;
             this.txtMaTrinhDoHocVan.MouseOnHover = System.Drawing.Color.Empty;
@@ -66,7 +69,7 @@
             this.txtMaTrinhDoHocVan.OnFocusColor = System.Drawing.Color.Empty;
             this.txtMaTrinhDoHocVan.OnFocusFontColor = System.Drawing.Color.Empty;
             this.txtMaTrinhDoHocVan.ReadOnly = false;
-            this.txtMaTrinhDoHocVan.Size = new System.Drawing.Size(153, 28);
+            this.txtMaTrinhDoHocVan.Size = new System.Drawing.Size(195, 28);
             this.txtMaTrinhDoHocVan.TabIndex = 0;
             this.txtMaTrinhDoHocVan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtMaTrinhDoHocVan.TextName = "";
@@ -74,9 +77,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(88, 259);
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(60, 360);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 13);
+            this.label1.Size = new System.Drawing.Size(141, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã Trình Độ Học Vấn";
             // 
@@ -88,20 +92,24 @@
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.btxoa,
             this.btcapnhat});
-            this.shapeContainer1.Size = new System.Drawing.Size(800, 450);
+            this.shapeContainer1.Size = new System.Drawing.Size(800, 508);
             this.shapeContainer1.TabIndex = 2;
             this.shapeContainer1.TabStop = false;
             // 
             // btxoa
             // 
-            this.btxoa.Location = new System.Drawing.Point(485, 343);
+            this.btxoa.BorderWidth = 2;
+            this.btxoa.CornerRadius = 17;
+            this.btxoa.Location = new System.Drawing.Point(470, 446);
             this.btxoa.Name = "btxoa";
             this.btxoa.Size = new System.Drawing.Size(124, 41);
             this.btxoa.Click += new System.EventHandler(this.Btxoa_Click);
             // 
             // btcapnhat
             // 
-            this.btcapnhat.Location = new System.Drawing.Point(168, 344);
+            this.btcapnhat.BorderWidth = 2;
+            this.btcapnhat.CornerRadius = 17;
+            this.btcapnhat.Location = new System.Drawing.Point(182, 448);
             this.btcapnhat.Name = "btcapnhat";
             this.btcapnhat.Size = new System.Drawing.Size(124, 38);
             this.btcapnhat.Click += new System.EventHandler(this.Btcapnhat_Click);
@@ -126,7 +134,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvTrinhDoHocVan.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvTrinhDoHocVan.Location = new System.Drawing.Point(0, 12);
+            this.dgvTrinhDoHocVan.Location = new System.Drawing.Point(0, 130);
             this.dgvTrinhDoHocVan.Name = "dgvTrinhDoHocVan";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -151,7 +159,7 @@
             this.txtGhiChu.ForeColors = System.Drawing.Color.Gray;
             this.txtGhiChu.IsPassword = false;
             this.txtGhiChu.LineThickness = 2;
-            this.txtGhiChu.Location = new System.Drawing.Point(644, 275);
+            this.txtGhiChu.Location = new System.Drawing.Point(527, 380);
             this.txtGhiChu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtGhiChu.MaxLength = 32767;
             this.txtGhiChu.MouseOnHover = System.Drawing.Color.Empty;
@@ -160,7 +168,7 @@
             this.txtGhiChu.OnFocusColor = System.Drawing.Color.Empty;
             this.txtGhiChu.OnFocusFontColor = System.Drawing.Color.Empty;
             this.txtGhiChu.ReadOnly = false;
-            this.txtGhiChu.Size = new System.Drawing.Size(153, 28);
+            this.txtGhiChu.Size = new System.Drawing.Size(195, 28);
             this.txtGhiChu.TabIndex = 4;
             this.txtGhiChu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtGhiChu.TextName = "";
@@ -176,7 +184,7 @@
             this.txtTenTrinhDoHocVan.ForeColors = System.Drawing.Color.Gray;
             this.txtTenTrinhDoHocVan.IsPassword = false;
             this.txtTenTrinhDoHocVan.LineThickness = 2;
-            this.txtTenTrinhDoHocVan.Location = new System.Drawing.Point(329, 275);
+            this.txtTenTrinhDoHocVan.Location = new System.Drawing.Point(277, 380);
             this.txtTenTrinhDoHocVan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTenTrinhDoHocVan.MaxLength = 32767;
             this.txtTenTrinhDoHocVan.MouseOnHover = System.Drawing.Color.Empty;
@@ -185,7 +193,7 @@
             this.txtTenTrinhDoHocVan.OnFocusColor = System.Drawing.Color.Empty;
             this.txtTenTrinhDoHocVan.OnFocusFontColor = System.Drawing.Color.Empty;
             this.txtTenTrinhDoHocVan.ReadOnly = false;
-            this.txtTenTrinhDoHocVan.Size = new System.Drawing.Size(153, 28);
+            this.txtTenTrinhDoHocVan.Size = new System.Drawing.Size(195, 28);
             this.txtTenTrinhDoHocVan.TabIndex = 5;
             this.txtTenTrinhDoHocVan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtTenTrinhDoHocVan.TextName = "";
@@ -193,45 +201,70 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(357, 259);
+            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(299, 360);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 13);
+            this.label2.Size = new System.Drawing.Size(146, 16);
             this.label2.TabIndex = 6;
             this.label2.Text = "Tên Trình Độ Học Vấn";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(697, 259);
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Location = new System.Drawing.Point(596, 360);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.Size = new System.Drawing.Size(59, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "Ghi Chú";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(206, 359);
+            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label4.Location = new System.Drawing.Point(211, 459);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 13);
+            this.label4.Size = new System.Drawing.Size(66, 16);
             this.label4.TabIndex = 8;
             this.label4.Text = "Cập Nhật";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(535, 359);
+            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.Location = new System.Drawing.Point(514, 459);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 13);
+            this.label5.Size = new System.Drawing.Size(33, 16);
             this.label5.TabIndex = 9;
             this.label5.Text = "Xóa";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Location = new System.Drawing.Point(3, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(794, 124);
+            this.panel1.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(194, 46);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(435, 40);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Quản Lý Trình Độ Học Vấn";
             // 
             // QuanLyTDHV_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 508);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -245,6 +278,8 @@
             this.Name = "QuanLyTDHV_GUI";
             this.Text = "QuanLyTDHV_GUI";
             ((System.ComponentModel.ISupportInitialize)(this.dgvTrinhDoHocVan)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,5 +299,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label6;
     }
 }

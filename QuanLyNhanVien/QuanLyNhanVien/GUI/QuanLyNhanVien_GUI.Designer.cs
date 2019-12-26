@@ -111,7 +111,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvNhanVien.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvNhanVien.Size = new System.Drawing.Size(1322, 238);
+            this.dgvNhanVien.Size = new System.Drawing.Size(1366, 238);
             this.dgvNhanVien.TabIndex = 0;
             this.dgvNhanVien.SelectionChanged += new System.EventHandler(this.DgvNhanVien_SelectionChanged);
             // 
@@ -426,7 +426,7 @@
             this.cttimkiem,
             this.btxoa,
             this.btcapnhat});
-            this.shapeContainer1.Size = new System.Drawing.Size(1328, 861);
+            this.shapeContainer1.Size = new System.Drawing.Size(1372, 861);
             this.shapeContainer1.TabIndex = 33;
             this.shapeContainer1.TabStop = false;
             // 
@@ -537,7 +537,7 @@
             this.panel1.Controls.Add(this.label19);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1328, 182);
+            this.panel1.Size = new System.Drawing.Size(1372, 182);
             this.panel1.TabIndex = 41;
             // 
             // label19
@@ -557,7 +557,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1328, 861);
+            this.ClientSize = new System.Drawing.Size(1372, 861);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);

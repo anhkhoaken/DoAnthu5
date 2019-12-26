@@ -33,5 +33,10 @@ namespace QuanLyNhanVien
                 MessageBox.Show("Thêm thành công Bộ Phận");
             }
         }
+
+        private void ThemBOPHAN_GUI_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -458,7 +458,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.shapeContainer1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ThemNhanVien_GUI";
             this.Text = "ThemNhanVien_GUI";
             this.Load += new System.EventHandler(this.ThemNhanVien_GUI_Load);

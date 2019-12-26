@@ -140,5 +140,19 @@ namespace QuanLyNhanVien
         {
 
         }
+
+        private void ThêmQuốcTịchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new ThemQUOCTICH_GUI();
+
+            f.Show();
+        }
+
+        private void QuảnLýQuốcTịchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form f = new QUANLYQUOCTICH_GUI();
+
+            f.Show();
+        }
     }
 }

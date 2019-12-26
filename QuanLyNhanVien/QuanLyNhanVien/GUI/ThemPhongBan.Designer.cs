@@ -93,7 +93,7 @@
             // 
             this.MaPB.BackColor = System.Drawing.Color.Transparent;
             this.MaPB.BorderColor = System.Drawing.Color.Black;
-            this.MaPB.BorderRadius = 13;
+            this.MaPB.BorderRadius = 0;
             this.MaPB.FillColor = System.Drawing.SystemColors.Window;
             this.MaPB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.MaPB.Font_Size = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
@@ -119,7 +119,7 @@
             // 
             this.SLNV.BackColor = System.Drawing.Color.Transparent;
             this.SLNV.BorderColor = System.Drawing.Color.Black;
-            this.SLNV.BorderRadius = 13;
+            this.SLNV.BorderRadius = 0;
             this.SLNV.FillColor = System.Drawing.SystemColors.Window;
             this.SLNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.SLNV.Font_Size = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
@@ -144,7 +144,7 @@
             // 
             this.TenPB.BackColor = System.Drawing.Color.Transparent;
             this.TenPB.BorderColor = System.Drawing.Color.Black;
-            this.TenPB.BorderRadius = 13;
+            this.TenPB.BorderRadius = 0;
             this.TenPB.FillColor = System.Drawing.SystemColors.Window;
             this.TenPB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.TenPB.Font_Size = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
@@ -169,7 +169,7 @@
             // 
             this.GC.BackColor = System.Drawing.Color.Transparent;
             this.GC.BorderColor = System.Drawing.Color.Black;
-            this.GC.BorderRadius = 13;
+            this.GC.BorderRadius = 0;
             this.GC.FillColor = System.Drawing.SystemColors.Window;
             this.GC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.GC.Font_Size = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
@@ -264,7 +264,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.shapeContainer1);
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ThemPhongBan";
             this.Text = "Form3";
