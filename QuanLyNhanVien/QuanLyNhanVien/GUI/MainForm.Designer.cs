@@ -264,6 +264,7 @@
             this.quảnLýQuốcTịchToolStripMenuItem.Text = "Quản Lý Quốc Tịch";
             this.quảnLýQuốcTịchToolStripMenuItem.Click += new System.EventHandler(this.QuảnLýQuốcTịchToolStripMenuItem_Click);
             // 
+           // tônGiáoToolStripMenuItem
             // 
             this.tônGiáoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thêmTônGIáoToolStripMenuItem,
