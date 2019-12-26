@@ -22,7 +22,7 @@ namespace QuanLyNhanVien.GUI
 
         private void Btxuatbc_Click(object sender, EventArgs e)
         {
-           
+
             copyAllToClipboard();
             //4
             Microsoft.Office.Interop.Excel.Application xlexcel;

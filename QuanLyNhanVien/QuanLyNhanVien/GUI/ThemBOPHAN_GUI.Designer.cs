@@ -94,6 +94,13 @@
             this.txbTenBoPhan.Size = new System.Drawing.Size(236, 20);
             this.txbTenBoPhan.TabIndex = 5;
             // 
+            // txbPhongBan
+            // 
+            this.txbPhongBan.Location = new System.Drawing.Point(275, 205);
+            this.txbPhongBan.Name = "txbPhongBan";
+            this.txbPhongBan.Size = new System.Drawing.Size(236, 20);
+            this.txbPhongBan.TabIndex = 6;
+            // 
             // txbGhiChu
             // 
             this.txbGhiChu.Location = new System.Drawing.Point(12, 205);
@@ -146,6 +153,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ThemBOPHAN_GUI";
             this.Text = "ThemBoPhan";
+            this.Load += new System.EventHandler(this.ThemBOPHAN_GUI_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

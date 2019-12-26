@@ -40,9 +40,18 @@
             this.txbTren15 = new System.Windows.Forms.TextBox();
             this.txbTren60 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+
             this.cbMaNhanVien = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+
+
+            this.cbMaNhanVien = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+
+            this.label7 = new System.Windows.Forms.Label();
+
             this.SuspendLayout();
             // 
             // button1
@@ -65,10 +74,31 @@
             // 
             // txbTenVC
             // 
+
             this.txbTenVC.Location = new System.Drawing.Point(12, 282);
+
+
+            this.txbTenVC.Location = new System.Drawing.Point(12, 282);
+
+            this.txbTenVC.Location = new System.Drawing.Point(9, 289);
+
             this.txbTenVC.Name = "txbTenVC";
             this.txbTenVC.Size = new System.Drawing.Size(251, 20);
             this.txbTenVC.TabIndex = 15;
+            // 
+            // txbMaNV
+            // 
+            this.txbMaNV.Location = new System.Drawing.Point(9, 172);
+            this.txbMaNV.Name = "txbMaNV";
+            this.txbMaNV.Size = new System.Drawing.Size(251, 20);
+            this.txbMaNV.TabIndex = 14;
+            // 
+            // txbHoney
+            // 
+            this.txbHoney.Location = new System.Drawing.Point(9, 223);
+            this.txbHoney.Name = "txbHoney";
+            this.txbHoney.Size = new System.Drawing.Size(251, 20);
+            this.txbHoney.TabIndex = 13;
             // 
             // label4
             // 
@@ -84,7 +114,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.label3.Location = new System.Drawing.Point(40, 254);
+
+            this.label3.Location = new System.Drawing.Point(40, 254);
+
+            this.label3.Location = new System.Drawing.Point(37, 261);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(162, 25);
             this.label3.TabIndex = 11;
@@ -94,7 +129,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+
             this.label2.Location = new System.Drawing.Point(91, 253);
+            this.label2.Location = new System.Drawing.Point(88, 260);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 25);
             this.label2.TabIndex = 10;
@@ -124,7 +162,12 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.label6.Location = new System.Drawing.Point(20, 195);
+
+            this.label6.Location = new System.Drawing.Point(20, 195);
+
+            this.label6.Location = new System.Drawing.Point(331, 261);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(230, 25);
             this.label6.TabIndex = 19;
@@ -139,7 +182,13 @@
             // 
             // txbTren60
             // 
+
             this.txbTren60.Location = new System.Drawing.Point(9, 223);
+
+
+            this.txbTren60.Location = new System.Drawing.Point(9, 223);
+
+            this.txbTren60.Location = new System.Drawing.Point(320, 289);
             this.txbTren60.Name = "txbTren60";
             this.txbTren60.Size = new System.Drawing.Size(251, 20);
             this.txbTren60.TabIndex = 21;
@@ -148,6 +197,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.label18);
+
+            this.panel1.Controls.Add(this.label18);
+
             this.panel1.Location = new System.Drawing.Point(-1, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(597, 119);
@@ -171,6 +223,15 @@
             this.label18.Size = new System.Drawing.Size(428, 40);
             this.label18.TabIndex = 24;
             this.label18.Text = "Thêm Thông Tin Hôn Nhân";
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(65, 195);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(123, 25);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Trình Trạng";
             // 
             // ThemHONNHAN
             // 
@@ -179,6 +240,9 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(596, 378);
             this.Controls.Add(this.cbMaNhanVien);
+
+            this.Controls.Add(this.cbMaNhanVien);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txbTren60);
             this.Controls.Add(this.txbTren15);
@@ -217,5 +281,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox cbMaNhanVien;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.ComboBox cbMaNhanVien;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label7;
     }
 }

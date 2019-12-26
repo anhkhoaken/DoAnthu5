@@ -38,6 +38,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbMaNgach = new System.Windows.Forms.ComboBox();
             this.cbMaBac = new System.Windows.Forms.ComboBox();
+            this.cbMaNgach = new System.Windows.Forms.ComboBox();
+            this.cbMaBac = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -80,12 +82,26 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Hệ Số lương";
             // 
+            // txbMaNgach
+            // 
+            this.txbMaNgach.Location = new System.Drawing.Point(15, 207);
+            this.txbMaNgach.Name = "txbMaNgach";
+            this.txbMaNgach.Size = new System.Drawing.Size(190, 20);
+            this.txbMaNgach.TabIndex = 4;
+            // 
             // txbMaHS
             // 
             this.txbMaHS.Location = new System.Drawing.Point(15, 146);
             this.txbMaHS.Name = "txbMaHS";
             this.txbMaHS.Size = new System.Drawing.Size(190, 20);
             this.txbMaHS.TabIndex = 5;
+            // 
+            // txbMaBac
+            // 
+            this.txbMaBac.Location = new System.Drawing.Point(270, 146);
+            this.txbMaBac.Name = "txbMaBac";
+            this.txbMaBac.Size = new System.Drawing.Size(190, 20);
+            this.txbMaBac.TabIndex = 6;
             // 
             // txbHeSo
             // 
@@ -135,6 +151,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(475, 304);
+
+            this.Controls.Add(this.cbMaBac);
+            this.Controls.Add(this.cbMaNgach);
             this.Controls.Add(this.cbMaBac);
             this.Controls.Add(this.cbMaNgach);
             this.Controls.Add(this.panel1);
@@ -165,5 +184,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox cbMaNgach;
         private System.Windows.Forms.ComboBox cbMaBac;
+        private System.Windows.Forms.ComboBox cbMaNgach;
+        private System.Windows.Forms.ComboBox cbMaBac;
+
     }
 }

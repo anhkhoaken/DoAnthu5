@@ -154,7 +154,6 @@ namespace QuanLyNhanVien
 
             f.Show();
         }
-
         private void ThêmTônGIáoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form f = new THEMTONGIAO_GUI();
