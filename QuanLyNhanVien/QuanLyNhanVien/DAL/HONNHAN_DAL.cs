@@ -46,7 +46,7 @@ namespace QuanLyNhanVien.DAL
 
         public void addHonNhan(HONNHAN_DTO honnhan)
         {
-            string query = string.Format("INSERT INTO dbo.HONNHAN (MaNV,Honey,TenVoChong,NTDuoi15,NTTren15,NTTren60) VALUES (N'{0}',N'{1}',N'{2}',{3},{4},{5} )", honnhan.MaNV,honnhan.Honey,honnhan.TenVoChong,honnhan.NTDuoi15,honnhan.NTTren15,honnhan.NTTren60);
+            string query = string.Format("INSERT INTO dbo.HONNHAN (MaNV,TenVoChong,NTDuoi15,NTTren15,NTTren60) VALUES (N'{0}',N'{1}',{2},{3},{4})", honnhan.MaNV,honnhan.TenVoChong,honnhan.NTDuoi15,honnhan.NTTren15,honnhan.NTTren60);
             DataTable result = DataProvider.Instance.ExecuteQuery(query);
         }
 
@@ -59,7 +59,7 @@ namespace QuanLyNhanVien.DAL
 
         public void UpdateHonNhan(HONNHAN_DTO honnhan)
         {
-            string query = string.Format("UPDATE dbo.HONNHAN SET Honey = N'{0}', TenVoChong = N'{1}', NTDuoi15 = {2}, NTTren15 = {3}, NTTren60 = {4} WHERE MaNV = N'{5}' ", honnhan.Honey,honnhan.TenVoChong,honnhan.NTDuoi15,honnhan.NTTren15,honnhan.NTTren60,honnhan.MaNV);
+            string query = string.Format("UPDATE dbo.HONNHAN SET TenVoChong = N'{0}', NTDuoi15 = {1}, NTTren15 = {2}, NTTren60 = {3} WHERE MaNV = N'{4}' ",honnhan.TenVoChong,honnhan.NTDuoi15,honnhan.NTTren15,honnhan.NTTren60,honnhan.MaNV);
             DataProvider.Instance.ExecuteNonQuery(query);
         }
     }

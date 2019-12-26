@@ -324,7 +324,6 @@
             this.Controls.Add(this.txtMaPB);
             this.Controls.Add(this.dgvPhongBan);
             this.Controls.Add(this.shapeContainer1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "QuanLyPhongBan_GUI";
             this.Text = "QuanLyPhongBan_GUI";
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhongBan)).EndInit();

@@ -34,10 +34,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txbMaBoPhan = new System.Windows.Forms.TextBox();
             this.txbTenBoPhan = new System.Windows.Forms.TextBox();
-            this.txbPhongBan = new System.Windows.Forms.TextBox();
             this.txbGhiChu = new System.Windows.Forms.TextBox();
             this.btnThem = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbphongban = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -127,16 +127,24 @@
             this.panel1.Size = new System.Drawing.Size(525, 100);
             this.panel1.TabIndex = 9;
             // 
+            // cbphongban
+            // 
+            this.cbphongban.FormattingEnabled = true;
+            this.cbphongban.Location = new System.Drawing.Point(275, 204);
+            this.cbphongban.Name = "cbphongban";
+            this.cbphongban.Size = new System.Drawing.Size(236, 21);
+            this.cbphongban.TabIndex = 10;
+            // 
             // ThemBOPHAN_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(525, 277);
+            this.Controls.Add(this.cbphongban);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.txbGhiChu);
-            this.Controls.Add(this.txbPhongBan);
             this.Controls.Add(this.txbTenBoPhan);
             this.Controls.Add(this.txbMaBoPhan);
             this.Controls.Add(this.label4);
@@ -159,9 +167,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txbMaBoPhan;
         private System.Windows.Forms.TextBox txbTenBoPhan;
-        private System.Windows.Forms.TextBox txbPhongBan;
         private System.Windows.Forms.TextBox txbGhiChu;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox cbphongban;
     }
 }

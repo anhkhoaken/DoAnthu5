@@ -17,6 +17,7 @@ namespace QuanLyNhanVien
         public QuanLyHonNhan()
         {
             InitializeComponent();
+            loaddanhsach();
         }
 
         public void loaddanhsach()
@@ -30,7 +31,7 @@ namespace QuanLyNhanVien
         {
             int currentRowIndex = dtgdanhsach.CurrentCellAddress.Y;
 
-            HONNHAN_DTO newdt = new HONNHAN_DTO(dtgdanhsach.CurrentRow.Cells[0].Value.ToString(), txbHoney.Text,txbTenVC.Text,int.Parse(txbDuoi15.Text), int.Parse(txbTren15.Text), int.Parse(txbTren60.Text));
+            HONNHAN_DTO newdt = new HONNHAN_DTO(dtgdanhsach.CurrentRow.Cells[0].Value.ToString(),txbTenVC.Text,int.Parse(txbDuoi15.Text), int.Parse(txbTren15.Text), int.Parse(txbTren60.Text));
 
 
             if (-1 < currentRowIndex && currentRowIndex < dtgdanhsach.RowCount)
@@ -53,6 +54,18 @@ namespace QuanLyNhanVien
             }
             loaddanhsach();
         }
+        bool checkInput()
+        {
+            if (txbTenVC.Text.Length < 3)
+                return false;
+            else if (txbDuoi15.Text.Length < 1)
+                return false;
+            else if (txbTren15.Text.Length < 1)
+                return false;
+            else if (txbTren60.Text.Length < 1)
+                return false;
+            return true;
+        }
 
         private void dtgdanhsach_SelectionChanged(object sender, EventArgs e)
         {
@@ -60,12 +73,11 @@ namespace QuanLyNhanVien
 
             if (-1 < currentRowIndex && currentRowIndex < dtgdanhsach.RowCount)
             {
-                txbMaNV.Text = dtgdanhsach.CurrentRow.Cells[0].Value.ToString();
-                txbHoney.Text = dtgdanhsach.CurrentRow.Cells[1].Value.ToString();
-                txbTenVC.Text = dtgdanhsach.CurrentRow.Cells[2].Value.ToString();
-                txbDuoi15.Text = dtgdanhsach.CurrentRow.Cells[3].Value.ToString();
-                txbTren15.Text = dtgdanhsach.CurrentRow.Cells[4].Value.ToString();
-                txbTren60.Text = dtgdanhsach.CurrentRow.Cells[5].Value.ToString();
+                cbbMaNv.Text = dtgdanhsach.CurrentRow.Cells[0].Value.ToString();
+                txbTenVC.Text = dtgdanhsach.CurrentRow.Cells[1].Value.ToString();
+                txbDuoi15.Text = dtgdanhsach.CurrentRow.Cells[2].Value.ToString();
+                txbTren15.Text = dtgdanhsach.CurrentRow.Cells[3].Value.ToString();
+                txbTren60.Text = dtgdanhsach.CurrentRow.Cells[4].Value.ToString();
 
             }
         }

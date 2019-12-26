@@ -32,12 +32,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txbMaNgach = new System.Windows.Forms.TextBox();
             this.txbMaHS = new System.Windows.Forms.TextBox();
-            this.txbMaBac = new System.Windows.Forms.TextBox();
             this.txbHeSo = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
+            this.cbMaNgach = new System.Windows.Forms.ComboBox();
+            this.cbMaBac = new System.Windows.Forms.ComboBox();
+=======
+>>>>>>> b702151db6ce7fc478a03b9963990dcc6306ea90
             this.SuspendLayout();
             // 
             // label1
@@ -80,6 +83,8 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Hệ Số lương";
             // 
+<<<<<<< HEAD
+=======
             // txbMaNgach
             // 
             this.txbMaNgach.Location = new System.Drawing.Point(15, 207);
@@ -87,6 +92,7 @@
             this.txbMaNgach.Size = new System.Drawing.Size(190, 20);
             this.txbMaNgach.TabIndex = 4;
             // 
+>>>>>>> b702151db6ce7fc478a03b9963990dcc6306ea90
             // txbMaHS
             // 
             this.txbMaHS.Location = new System.Drawing.Point(15, 146);
@@ -94,6 +100,8 @@
             this.txbMaHS.Size = new System.Drawing.Size(190, 20);
             this.txbMaHS.TabIndex = 5;
             // 
+<<<<<<< HEAD
+=======
             // txbMaBac
             // 
             this.txbMaBac.Location = new System.Drawing.Point(270, 146);
@@ -101,6 +109,7 @@
             this.txbMaBac.Size = new System.Drawing.Size(190, 20);
             this.txbMaBac.TabIndex = 6;
             // 
+>>>>>>> b702151db6ce7fc478a03b9963990dcc6306ea90
             // txbHeSo
             // 
             this.txbHeSo.Location = new System.Drawing.Point(270, 207);
@@ -127,24 +136,47 @@
             this.panel1.Size = new System.Drawing.Size(472, 98);
             this.panel1.TabIndex = 9;
             // 
+<<<<<<< HEAD
+            // cbMaNgach
+            // 
+            this.cbMaNgach.FormattingEnabled = true;
+            this.cbMaNgach.Location = new System.Drawing.Point(15, 205);
+            this.cbMaNgach.Name = "cbMaNgach";
+            this.cbMaNgach.Size = new System.Drawing.Size(190, 21);
+            this.cbMaNgach.TabIndex = 10;
+            // 
+            // cbMaBac
+            // 
+            this.cbMaBac.FormattingEnabled = true;
+            this.cbMaBac.Location = new System.Drawing.Point(270, 145);
+            this.cbMaBac.Name = "cbMaBac";
+            this.cbMaBac.Size = new System.Drawing.Size(190, 21);
+            this.cbMaBac.TabIndex = 11;
+            // 
+=======
+>>>>>>> b702151db6ce7fc478a03b9963990dcc6306ea90
             // ThemHSLUONG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(475, 304);
+<<<<<<< HEAD
+            this.Controls.Add(this.cbMaBac);
+            this.Controls.Add(this.cbMaNgach);
+=======
+>>>>>>> b702151db6ce7fc478a03b9963990dcc6306ea90
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txbHeSo);
-            this.Controls.Add(this.txbMaBac);
             this.Controls.Add(this.txbMaHS);
-            this.Controls.Add(this.txbMaNgach);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ThemHSLUONG";
             this.Text = "ThemHSLUONG";
+            this.Load += new System.EventHandler(this.ThemHSLUONG_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,11 +188,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txbMaNgach;
         private System.Windows.Forms.TextBox txbMaHS;
-        private System.Windows.Forms.TextBox txbMaBac;
         private System.Windows.Forms.TextBox txbHeSo;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
+<<<<<<< HEAD
+        private System.Windows.Forms.ComboBox cbMaNgach;
+        private System.Windows.Forms.ComboBox cbMaBac;
+=======
+>>>>>>> b702151db6ce7fc478a03b9963990dcc6306ea90
     }
 }

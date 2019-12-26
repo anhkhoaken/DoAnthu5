@@ -17,11 +17,18 @@ namespace QuanLyNhanVien
         public ThemBOPHAN_GUI()
         {
             InitializeComponent();
+            Load();
         }
-
+        private void Load()
+        {
+            List<PHONGBAN_DTO> dsphongban = PHONGBAN_DAL.Instance.LoadListPHONGBAN();
+            cbphongban.DataSource = new BindingSource(dsphongban, null);
+            cbphongban.DisplayMember = "TenPB";
+            cbphongban.ValueMember = "MaPB";
+        }
         private void btnThem_Click(object sender, EventArgs e)
         {
-            BOPHAN_DTO bophan = new BOPHAN_DTO(txbMaBoPhan.Text, txbTenBoPhan.Text, txbPhongBan.Text, txbGhiChu.Text);
+            BOPHAN_DTO bophan = new BOPHAN_DTO(txbMaBoPhan.Text, txbTenBoPhan.Text, cbphongban.SelectedValue.ToString(), txbGhiChu.Text);
 
             if (BOPHAN_DAL.Instance.checkIsExist(bophan.MaBoPhan))
             {
